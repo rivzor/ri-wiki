@@ -6,46 +6,46 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Чек-лист необходимых настроек Windows 10/11 сразу после чистой установки.">
+        <meta name="description" content="Создание и использование файла autounattend.xml для полной автоматизации установки Windows.">
       
       
         <meta name="author" content="rivzor">
       
       
-        <link rel="canonical" href="https://rivzor.github.io/ri-wiki/content/windows/optimization.html">
+        <link rel="canonical" href="https://rivzor.github.io/ri-wiki/content/windows/autounattend/">
       
       
-        <link rel="prev" href="activation.html">
+        <link rel="prev" href="../optimization/">
       
       
-        <link rel="next" href="autounattend.html">
+        <link rel="next" href="../../software/pc/rufus/">
       
       
         
-          <link rel="alternate" href="../.." hreflang="ru">
+          <link rel="alternate" href="../../.." hreflang="ru">
         
           <link rel="alternate" href="/ri-wiki/en/" hreflang="en">
         
       
       
-      <link rel="icon" href="../../assets/logo.png">
+      <link rel="icon" href="../../../assets/logo.png">
       <meta name="generator" content="zensical-0.0.8">
     
     
       
-        <title>Базовая оптимизация - Ri-Wiki</title>
+        <title>Файл автоответов - Ri-Wiki</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.2644c6b7.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/modern/main.2644c6b7.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/modern/palette.dfe2e883.min.css">
       
       
   
@@ -93,9 +93,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
@@ -120,7 +120,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#windows" class="md-skip">
+        <a href="#autounattendxml" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -134,9 +134,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
-    <a href="../../index.html" title="Ri-Wiki" class="md-header__button md-logo" aria-label="Ri-Wiki" data-md-component="logo">
+    <a href="../../.." title="Ri-Wiki" class="md-header__button md-logo" aria-label="Ri-Wiki" data-md-component="logo">
       
-  <img src="../../assets/logo.png" alt="logo">
+  <img src="../../../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -153,7 +153,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Базовая оптимизация
+              Файл автоответов
             
           </span>
         </div>
@@ -200,7 +200,7 @@
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="../.." hreflang="ru" class="md-select__link">
+            <a href="../../.." hreflang="ru" class="md-select__link">
               Русский
             </a>
           </li>
@@ -232,6 +232,16 @@
     
     <div class="md-header__source">
       
+        <a href="https://github.com/rivzor/ri-wiki" title="Перейти к репозиторию" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    rivzor/ri-wiki
+  </div>
+</a>
+      
     </div>
   </nav>
   
@@ -253,7 +263,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../index.html" class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   Главная
@@ -282,7 +292,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="download.html" class="md-tabs__link">
+        <a href="../download/" class="md-tabs__link">
           
   
   Руководства
@@ -304,7 +314,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../other/adblock.html" class="md-tabs__link">
+        <a href="../../other/adblock/" class="md-tabs__link">
           
   
   Разное
@@ -337,13 +347,25 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навигация" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="Ri-Wiki" class="md-nav__button md-logo" aria-label="Ri-Wiki" data-md-component="logo">
+    <a href="../../.." title="Ri-Wiki" class="md-nav__button md-logo" aria-label="Ri-Wiki" data-md-component="logo">
       
-  <img src="../../assets/logo.png" alt="logo">
+  <img src="../../../assets/logo.png" alt="logo">
 
     </a>
     Ri-Wiki
   </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/rivzor/ri-wiki" title="Перейти к репозиторию" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    rivzor/ri-wiki
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -354,11 +376,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../index.html" class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-home" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-library-big" viewBox="0 0 24 24"><rect width="8" height="18" x="3" y="3" rx="1"/><path d="M7 3v18M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z"/></svg>
   
   <span class="md-ellipsis">
     
@@ -515,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="download.html" class="md-nav__link">
+      <a href="../download/" class="md-nav__link">
         
   
   
@@ -531,14 +553,6 @@
   </span>
   
   
-    
-  
-  
-    <span class="md-status md-status--hot" title="Горячее">
-    </span>
-  
-
-  
 
       </a>
     </li>
@@ -553,7 +567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="install.html" class="md-nav__link">
+      <a href="../install/" class="md-nav__link">
         
   
   
@@ -583,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="activation.html" class="md-nav__link">
+      <a href="../activation/" class="md-nav__link">
         
   
   
@@ -678,6 +692,44 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../optimization/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-gauge" viewBox="0 0 24 24"><path d="m12 14 4-4M3.34 19a10 10 0 1 1 17.32 0"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Базовая оптимизация
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--deprecated" title="Не актуально">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -694,53 +746,37 @@
           
   
   
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-gauge" viewBox="0 0 24 24"><path d="m12 14 4-4M3.34 19a10 10 0 1 1 17.32 0"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-file-cog" viewBox="0 0 24 24"><path d="M14 2v4a2 2 0 0 0 2 2h4M2.305 15.53l.923-.382M3.228 12.852l-.924-.383"/><path d="M4.677 21.5a2 2 0 0 0 1.313.5H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v2.5M4.852 11.228l-.383-.923M4.852 16.772l-.383.924M7.148 11.228l.383-.923M7.53 17.696l-.382-.924M8.772 12.852l.923-.383M8.772 15.148l.923.383"/><circle cx="6" cy="14" r="3"/></svg>
   
   <span class="md-ellipsis">
     
   
-    Базовая оптимизация
+    Файл автоответов
   
 
     
   </span>
   
-  
-    
-  
-  
-    <span class="md-status md-status--deprecated" title="Не актуально">
-    </span>
-  
-
   
 
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="optimization.html" class="md-nav__link md-nav__link--active">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-gauge" viewBox="0 0 24 24"><path d="m12 14 4-4M3.34 19a10 10 0 1 1 17.32 0"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-file-cog" viewBox="0 0 24 24"><path d="M14 2v4a2 2 0 0 0 2 2h4M2.305 15.53l.923-.382M3.228 12.852l-.924-.383"/><path d="M4.677 21.5a2 2 0 0 0 1.313.5H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v2.5M4.852 11.228l-.383-.923M4.852 16.772l-.383.924M7.148 11.228l.383-.923M7.53 17.696l-.382-.924M8.772 12.852l.923-.383M8.772 15.148l.923.383"/><circle cx="6" cy="14" r="3"/></svg>
   
   <span class="md-ellipsis">
     
   
-    Базовая оптимизация
+    Файл автоответов
   
 
     
   </span>
   
-  
-    
-  
-  
-    <span class="md-status md-status--deprecated" title="Не актуально">
-    </span>
-  
-
   
 
       </a>
@@ -764,44 +800,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Шаг 1: Обновления и Драйверы
+        Шаг 1: Онлайн-генератор
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Шаг 1: Обновления и Драйверы">
+    <nav class="md-nav" aria-label="Шаг 1: Онлайн-генератор">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#11-windows" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.1. Центр обновления Windows
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.2. Драйверы Видеокарты
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#13" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.3. Проверка Диспетчера устройств
+        Как пользоваться генератором
       
     </span>
   </a>
@@ -817,101 +831,7 @@
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Шаг 2: Приватность и Телеметрия
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-bloatware" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Шаг 3: Очистка от "Мусора" (Bloatware)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-explorer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Шаг 4: Настройка Проводника (Explorer)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Шаг 5: Оптимизация Производительности
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Шаг 5: Оптимизация Производительности">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#51" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.1. Визуальные эффекты
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#52" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.2. План электропитания
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#53" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.3. Автозагрузка
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#54-system-restore" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.4. Защита системы (System Restore)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-uac" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Шаг 6: Контроль учетных записей (UAC)
+        Шаг 2: Использование файла
       
     </span>
   </a>
@@ -922,36 +842,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="autounattend.html" class="md-nav__link">
-        
-  
-  
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-file-cog" viewBox="0 0 24 24"><path d="M14 2v4a2 2 0 0 0 2 2h4M2.305 15.53l.923-.382M3.228 12.852l-.924-.383"/><path d="M4.677 21.5a2 2 0 0 0 1.313.5H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v2.5M4.852 11.228l-.383-.923M4.852 16.772l-.383.924M7.148 11.228l.383-.923M7.53 17.696l-.382-.924M8.772 12.852l.923-.383M8.772 15.148l.923.383"/><circle cx="6" cy="14" r="3"/></svg>
-  
-  <span class="md-ellipsis">
-    
-  
-    Файл автоответов
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -1045,7 +935,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/pc/rufus.html" class="md-nav__link">
+      <a href="../../software/pc/rufus/" class="md-nav__link">
         
   
   
@@ -1075,7 +965,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/pc/peazip.html" class="md-nav__link">
+      <a href="../../software/pc/peazip/" class="md-nav__link">
         
   
   
@@ -1105,7 +995,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/pc/wiztree.html" class="md-nav__link">
+      <a href="../../software/pc/wiztree/" class="md-nav__link">
         
   
   
@@ -1135,7 +1025,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/pc/potplayer.html" class="md-nav__link">
+      <a href="../../software/pc/potplayer/" class="md-nav__link">
         
   
   
@@ -1232,7 +1122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/android/byebyedpi.html" class="md-nav__link">
+      <a href="../../software/android/byebyedpi/" class="md-nav__link">
         
   
   
@@ -1333,7 +1223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../other/adblock.html" class="md-nav__link">
+      <a href="../../other/adblock/" class="md-nav__link">
         
   
   
@@ -1393,44 +1283,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Шаг 1: Обновления и Драйверы
+        Шаг 1: Онлайн-генератор
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Шаг 1: Обновления и Драйверы">
+    <nav class="md-nav" aria-label="Шаг 1: Онлайн-генератор">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#11-windows" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.1. Центр обновления Windows
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.2. Драйверы Видеокарты
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#13" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.3. Проверка Диспетчера устройств
+        Как пользоваться генератором
       
     </span>
   </a>
@@ -1446,101 +1314,7 @@
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Шаг 2: Приватность и Телеметрия
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-bloatware" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Шаг 3: Очистка от "Мусора" (Bloatware)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-explorer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Шаг 4: Настройка Проводника (Explorer)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Шаг 5: Оптимизация Производительности
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Шаг 5: Оптимизация Производительности">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#51" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.1. Визуальные эффекты
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#52" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.2. План электропитания
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#53" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.3. Автозагрузка
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#54-system-restore" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.4. Защита системы (System Restore)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-uac" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Шаг 6: Контроль учетных записей (UAC)
+        Шаг 2: Использование файла
       
     </span>
   </a>
@@ -1572,7 +1346,7 @@
   
   
     <li class="md-path__item">
-      <a href="../../index.html" class="md-path__link">
+      <a href="../../.." class="md-path__link">
         
   <span class="md-ellipsis">
     Главная
@@ -1595,7 +1369,7 @@
     
     
       <li class="md-path__item">
-        <a href="download.html" class="md-path__link">
+        <a href="../download/" class="md-path__link">
           
   <span class="md-ellipsis">
     Руководства
@@ -1616,7 +1390,7 @@
     
     
       <li class="md-path__item">
-        <a href="download.html" class="md-path__link">
+        <a href="../download/" class="md-path__link">
           
   <span class="md-ellipsis">
     Windows
@@ -1634,7 +1408,7 @@
     
     
       <li class="md-path__item">
-        <a href="optimization.html" class="md-path__link">
+        <a href="../optimization/" class="md-path__link">
           
   <span class="md-ellipsis">
     Оптимизация
@@ -1653,152 +1427,93 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
+  
 
-<h1 id="windows">Базовая оптимизация Windows<a class="headerlink" href="#windows" title="Ссылка на этот раздел">#</a></h1>
-<div class="admonition info">
-<p class="admonition-title">Обзор</p>
-<p>Это "чек-лист" действий, которые нужно выполнить сразу после чистой установки Windows. Цель: убрать телеметрию, отключить ненужные службы, настроить систему на максимальную производительность.</p>
+
+<h1 id="autounattendxml">Файл автоответов (autounattend.xml)<a class="headerlink" href="#autounattendxml" title="Ссылка на этот раздел">#</a></h1>
+<blockquote>
+<p>Как пропустить все окна настройки (OOBE) при установке Windows и сразу попасть на рабочий стол с готовым пользователем.</p>
+</blockquote>
+<hr />
+<div class="admonition question">
+<p class="admonition-title">Что такое autounattend.xml?</p>
+<p><code>autounattend.xml</code> - это специальный XML-файл, который содержит ответы на все вопросы установщика Windows. Он позволяет полностью автоматизировать процесс установки: от выбора языка и принятия EULA до создания учетных записей и настройки параметров приватности.</p>
 </div>
-<hr />
-<h2 data-search-exclude="data-search-exclude" id="1">Шаг 1: Обновления и Драйверы<a class="headerlink" href="#1" title="Ссылка на этот раздел">#</a></h2>
-<p>Первый шаг после установки — приведение системы в актуальное состояние.</p>
-<h3 data-search-exclude="data-search-exclude" id="11-windows">1.1. Центр обновления Windows<a class="headerlink" href="#11-windows" title="Ссылка на этот раздел">#</a></h3>
+<h2 data-search-exclude="data-search-exclude" id="1-">Шаг 1: Онлайн-генератор<a class="headerlink" href="#1-" title="Ссылка на этот раздел">#</a></h2>
+<p>Самый простой способ создать корректный файл — использовать онлайн-генератор. Он предоставляет удобный веб-интерфейс для выбора всех необходимых опций.</p>
+<p><a class="md-button md-button--primary" href="https://schneegans.de/windows/unattend-generator/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span> Перейти к Unattend Generator</a></p>
+<h3 data-search-exclude="data-search-exclude" id="_1">Как пользоваться генератором<a class="headerlink" href="#_1" title="Ссылка на этот раздел">#</a></h3>
 <ol>
-<li>Открыть <code>Параметры</code> -&gt; <code>Центр обновления Windows</code> (Windows Update).</li>
-<li>Нажать "Проверить наличие обновлений".</li>
-<li>Установить <strong>все</strong> доступные обновления, включая "Необязательные" (Optional Updates) — там часто лежат драйверы чипсета и звука.</li>
-<li>Перезагружаться столько раз, сколько потребуется.</li>
-</ol>
-<h3 data-search-exclude="data-search-exclude" id="12">1.2. Драйверы Видеокарты<a class="headerlink" href="#12" title="Ссылка на этот раздел">#</a></h3>
-<p>Windows Update ставит базовый драйвер. Для игр и производительности нужен полный пакет.</p>
-<ul>
-<li><strong>NVIDIA:</strong> Скачать GeForce Experience или драйвер с <a href="https://www.nvidia.com/Download/index.aspx">официального сайта</a>.</li>
-<li><strong>AMD:</strong> Скачать Adrenalin Software с <a href="https://www.amd.com/en/support">официального сайта</a>.</li>
-<li><strong>Intel Arc:</strong> Скачать с <a href="https://www.intel.com/content/www/us/en/download-center/home.html">сайта Intel</a>.</li>
-</ul>
-<h3 data-search-exclude="data-search-exclude" id="13">1.3. Проверка Диспетчера устройств<a class="headerlink" href="#13" title="Ссылка на этот раздел">#</a></h3>
-<ol>
-<li>Нажать <code>Win + X</code> и выбрать <code>Диспетчер устройств</code> (Device Manager).</li>
-<li>Проверить, что в списке нет устройств с желтым восклицательным знаком.</li>
-<li>Если есть — найти драйвер на сайте производителя ноутбука или материнской платы.</li>
-</ol>
-<hr />
-<h2 data-search-exclude="data-search-exclude" id="2">Шаг 2: Приватность и Телеметрия<a class="headerlink" href="#2" title="Ссылка на этот раздел">#</a></h2>
-<p>Отключаем "слежку" Microsoft.</p>
-<ol>
-<li>Открыть <code>Параметры</code> -&gt; <code>Приватность и защита</code> (Privacy &amp; Security).</li>
-<li><strong>Общие (General):</strong> Отключить <strong>все 4</strong> переключателя (Рекламный идентификатор, отслеживание запуска и т.д.).</li>
-<li><strong>Диагностика и отзывы (Diagnostics &amp; feedback):</strong><ul>
-<li>Отключить "Отправлять необязательные данные".</li>
-<li>Отключить "Улучшение рукописного ввода".</li>
-<li>Отключить "Персонализированные возможности".</li>
-<li>Установить "Частота отправки отзывов" -&gt; "Никогда".</li>
+<li><strong>System:</strong> Выберите версию Windows (10/11), которую вы устанавливаете.</li>
+<li><strong>General:</strong> Укажите имя компьютера, ключ продукта (можно оставить пустым для активации позже) и настройки приватности (рекомендуется "Disable All" для максимальной конфиденциальности).</li>
+<li><strong>User Account:</strong> Самая важная часть.<ul>
+<li><strong>Name:</strong> Имя вашего локального пользователя (например, <code>Admin</code> или <code>rivzor</code>).</li>
+<li><strong>Password:</strong> Укажите пароль.</li>
+<li><strong>Auto-Logon:</strong> Включите, если хотите автоматически входить в систему при запуске.</li>
 </ul>
 </li>
-<li><strong>Журнал действий (Activity history):</strong> Снять галку "Сохранять журнал действий на этом устройстве".</li>
-<li><strong>Расположение (Location):</strong> Отключить, если не используется ноутбук и карты.</li>
-<li><strong>Камера, Микрофон:</strong> Проверить, каким приложениям дан доступ. Отключить у ненужных.</li>
-</ol>
-<hr />
-<h2 data-search-exclude="data-search-exclude" id="3-bloatware">Шаг 3: Очистка от "Мусора" (Bloatware)<a class="headerlink" href="#3-bloatware" title="Ссылка на этот раздел">#</a></h2>
-<p>Удаляем предустановленный хлам.</p>
-<ol>
-<li>Открыть <code>Параметры</code> -&gt; <code>Приложения</code> -&gt; <code>Установленные приложения</code> (Apps -&gt; Installed apps).</li>
-<li>Удалить все, что не нужно.<ul>
-<li><code>Xbox</code> (если не используется).</li>
-<li><code>Teams</code> (если не нужен).</li>
-<li><code>OneDrive</code> (если не используется).</li>
-<li><code>Feedback Hub</code>, <code>Get Help</code>, <code>People</code>, <code>Cortana</code>.</li>
-<li>Сторонний антивирус (если он был, например, McAfee) — встроенный Defender работает отлично.</li>
-</ul>
-</li>
-</ol>
-<details class="question">
-<summary>Удаление 'неудаляемых' приложений (PowerShell)</summary>
-<p>Некоторые приложения (как Cortana) не удаляются через <code>Параметры</code>. Для этого используется PowerShell (от им. Администратора).</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c"># Пример удаления Cortana</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">Get-AppxPackage</span> <span class="p">*</span><span class="n">Microsoft</span><span class="p">.</span><span class="n">549981C3F5F10</span><span class="p">*</span> <span class="p">|</span> <span class="nb">Remove-AppxPackage</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c"># Пример удаления Xbox (всех компонентов)</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">Get-AppxPackage</span> <span class="p">*</span><span class="n">xbox</span><span class="p">*</span> <span class="p">|</span> <span class="nb">Remove-AppxPackage</span>
-</span></code></pre></div>
-</details>
-<hr />
-<h2 data-search-exclude="data-search-exclude" id="4-explorer">Шаг 4: Настройка Проводника (Explorer)<a class="headerlink" href="#4-explorer" title="Ссылка на этот раздел">#</a></h2>
-<p>Делаем Проводник удобным.</p>
-<ol>
-<li>Открыть Проводник.</li>
-<li>Нажать на <code>...</code> (или меню <code>Вид</code>) -&gt; <code>Параметры</code> (Options).</li>
-<li>Вкладка <strong>"Вид" (View)</strong>:<ul>
-<li>[ВКЛ] "Всегда отображать значки, а не эскизы" (Always show icons, never thumbnails) — <em>по желанию, ускоряет открытие папок с фото/видео</em>.</li>
-<li>[ВКЛ] "Показывать расширения для зарегистрированных типов файлов" (Show file name extensions). <strong>(Обязательно)</strong></li>
-<li>[ВКЛ] "Показывать скрытые файлы, папки и диски" (Show hidden files...).</li>
-<li>[ОТКЛ] "Скрывать защищенные системные файлы" (Hide protected operating system files) — <em>снять галку (по желанию, для продвинутых)</em>.</li>
-</ul>
-</li>
-<li>Нажать "Применить к папкам" (Apply to Folders).</li>
-</ol>
-<hr />
-<h2 data-search-exclude="data-search-exclude" id="5">Шаг 5: Оптимизация Производительности<a class="headerlink" href="#5" title="Ссылка на этот раздел">#</a></h2>
-<h3 data-search-exclude="data-search-exclude" id="51">5.1. Визуальные эффекты<a class="headerlink" href="#51" title="Ссылка на этот раздел">#</a></h3>
-<p>Отключение анимации и прозрачности ускоряет отклик интерфейса.</p>
-<ol>
-<li>Открыть <code>Параметры</code> -&gt; <code>Персонализация</code> -&gt; <code>Цвета</code>.</li>
-<li>Отключить <strong>"Эффекты прозрачности" (Transparency effects)</strong>.</li>
-<li>Открыть <code>Параметры</code> -&gt; <code>Специальные возможности</code> (Accessibility) -&gt; <code>Визуальные эффекты</code>.</li>
-<li>Отключить <strong>"Эффекты анимации" (Animation effects)</strong>.</li>
-</ol>
-<details class="info">
-<summary>Тонкая настройка (Панель управления)</summary>
-<p>Для более детальной настройки:</p>
-<ol>
-<li>Нажать <code>Win + R</code>, ввести <code>systempropertiesperformance</code> и нажать Enter.</li>
-<li>Выбрать "Обеспечить наилучшее быстродействие" (Adjust for best performance).</li>
-<li>Оставить только 3 галки:<ul>
-<li>"Вывод эскизов вместо значков" (Show thumbnails instead of icons).</li>
-<li>"Использование стилей отображения для окон и кнопок" (Use visual styles...).</li>
-<li>"Сглаживание неровностей экранных шрифтов" (Smooth edges of screen fonts).</li>
-</ul>
-</li>
-</ol>
-</details>
-<h3 data-search-exclude="data-search-exclude" id="52">5.2. План электропитания<a class="headerlink" href="#52" title="Ссылка на этот раздел">#</a></h3>
-<ol>
-<li>Нажать <code>Win + R</code>, ввести <code>powercfg.cpl</code> и нажать Enter.</li>
-<li>Выбрать "Максимальная производительность" (High performance).</li>
-<li>Если ее нет, выбрать "Сбалансированная" (Balanced).</li>
-</ol>
-<h3 data-search-exclude="data-search-exclude" id="53">5.3. Автозагрузка<a class="headerlink" href="#53" title="Ссылка на этот раздел">#</a></h3>
-<p>Чем меньше программ стартует с Windows, тем быстрее загрузка.</p>
-<ol>
-<li>Нажать <code>Ctrl + Shift + Esc</code> (Диспетчер задач).</li>
-<li>Перейти на вкладку <code>Автозагрузка</code> (Startup) или <code>Приложения автозагрузки</code>.</li>
-<li>Отключить все, что не является критически важным (Steam, Discord, Spotify, Update-чекеры и т.д.). Оставить только драйверы (Realtek, NVIDIA) и антивирус.</li>
-</ol>
-<h3 data-search-exclude="data-search-exclude" id="54-system-restore">5.4. Защита системы (System Restore)<a class="headerlink" href="#54-system-restore" title="Ссылка на этот раздел">#</a></h3>
-<p>По умолчанию включена и "ест" место на диске.</p>
-<ol>
-<li>Нажать <code>Win + R</code>, ввести <code>sysdm.cpl</code> и нажать Enter.</li>
-<li>Перейти на вкладку "Защита системы" (System Protection).</li>
-<li>Выбрать диск (C:) и нажать "Настроить" (Configure).</li>
-<li>Выбрать "Отключить защиту системы" (Disable) и удалить все точки.</li>
+<li><strong>Региональные настройки (Regional):</strong> Выберите язык системы, раскладку клавиатуры (<code>ru-RU</code>) и часовой пояс.</li>
+<li><strong>OOBE (Out-of-Box Experience):</strong> Установите "Skip all" (Пропустить всё), чтобы не видеть экраны приветствия.</li>
+<li><strong>Disk Configuration:</strong> Можно оставить по умолчанию (Wipe &amp; Use entire disk), если вы устанавливаете систему на чистый диск.</li>
 </ol>
 <div class="admonition warning">
-<p class="admonition-title">Внимание</p>
-<p>Отключение Защиты системы не позволит "откатить" Windows в случае сбоя драйвера или обновления. Это действие для тех, кто предпочитает бэкапы (Acronis/Macrium) или быструю переустановку.</p>
+<p class="admonition-title">Пароль</p>
+<p>Если вы указываете пароль в генераторе, он будет сохранен в XML-файле в виде простого текста (Base64). Не используйте этот файл на флешках, к которым имеют доступ посторонние. Для локального использования это безопасно.</p>
 </div>
+<p>После настройки всех параметров нажмите кнопку <strong>"Download File"</strong> внизу страницы. Переименуйте скачанный файл в <code>autounattend.xml</code>.</p>
 <hr />
-<h2 data-search-exclude="data-search-exclude" id="6-uac">Шаг 6: Контроль учетных записей (UAC)<a class="headerlink" href="#6-uac" title="Ссылка на этот раздел">#</a></h2>
-<p>UAC — это надоедливое окно "Разрешить этому приложению...".</p>
+<h2 data-search-exclude="data-search-exclude" id="2">Шаг 2: Использование файла<a class="headerlink" href="#2" title="Ссылка на этот раздел">#</a></h2>
+<p>Чтобы установщик Windows "подхватил" файл, его нужно правильно разместить.</p>
 <ol>
-<li>Нажать <code>Win</code>, ввести <code>UAC</code>, открыть "Изменение параметров контроля учетных записей".</li>
-<li>Опустить ползунок на один или два пункта вниз (до "Не уведомлять при внесении изменений в параметры Windows").</li>
-<li>Установка в самый низ ("Никогда не уведомлять") <strong>не рекомендуется</strong> из соображений безопасности.</li>
+<li>
+<p><strong>Подготовьте флешку:</strong> Создайте загрузочную USB-флешку с Windows. Вы можете использовать для этого Rufus, как описано в другом гайде.</p>
+<p><a class="md-button" href="../install/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 3H5a2 2 0 0 0-2 2v4h2V5h17v14H5v-4H3v4a2 2 0 0 0 2 2h17a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2M7 15v-2H0v-2h7V9l4 3zm13-2h-7v-2h7zm0-4h-7V7h7zm-3 8h-4v-2h4z"/></svg></span> Гайд по установке Windows</a></p>
+<p><a class="md-button" href="../../software/pc/rufus/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 15c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1m7.07-10.31L16.5 6.1l-1.43 1.4-1.41-1.4zM17.9 7.5l1.41 1.43-1.41 1.41-1.4-1.41zM8 13c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3m1.77-8.67.73.75 3.79-3.79c.18-.18.43-.29.71-.29s.53.11.71.29l7.07 7.07v.01a1.02 1.02 0 0 1-.12 1.39l-3.73 3.74.74.73-6.72 6.72A6.98 6.98 0 0 1 8 23c-3.87 0-7-3.13-7-7 0-1.93.78-3.68 2.05-4.95zM20.59 9 15 3.41 11.93 6.5l5.57 5.58z"/></svg></span> О программе Rufus</a></p>
+</li>
+<li>
+<p><strong>Скопируйте файл:</strong> Просто скопируйте ваш готовый файл <code>autounattend.xml</code> в <strong>корень</strong> созданной загрузочной USB-флешки (рядом с <code>setup.exe</code> и другими папками).</p>
+</li>
+<li>
+<p><strong>Начните установку:</strong> Загрузитесь с этой флешки.</p>
+</li>
 </ol>
 <div class="admonition success">
-<p class="admonition-title">Готово</p>
-<p>Система настроена. После выполнения этих шагов рекомендуется <strong>перезагрузить ПК</strong>.</p>
+<p class="admonition-title">Готово!</p>
+<p>Если все сделано правильно, вы не увидите ни одного окна настройки. Установка скопирует файлы, несколько раз перезагрузит ПК и сразу же загрузит рабочий стол созданного вами пользователя.</p>
 </div>
+<details class="example">
+<summary>Минимальный пример <code>autounattend.xml</code> (Только пропуск OOBE)</summary>
+<p>Если вам не нужно создавать пользователя, а просто пропустить надоедливые экраны OOBE (например, при установке в виртуальной машине), вы можете использовать этот минимальный файл. Он заставит систему пропустить OOBE и создать пользователя без пароля.</p>
+<div class="language-xml highlight"><span class="filename">autounattend.xml</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">&lt;unattend</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;urn:schemas-microsoft-com:unattend&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">&lt;settings</span><span class="w"> </span><span class="na">pass=</span><span class="s">&quot;oobeSystem&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="nt">&lt;component</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Microsoft-Windows-Shell-Setup&quot;</span><span class="w"> </span><span class="na">processorArchitecture=</span><span class="s">&quot;amd64&quot;</span><span class="w"> </span><span class="na">publicKeyToken=</span><span class="s">&quot;31bf3856ad364e35&quot;</span><span class="w"> </span><span class="na">language=</span><span class="s">&quot;neutral&quot;</span><span class="w"> </span><span class="na">versionScope=</span><span class="s">&quot;nonSxS&quot;</span><span class="w"> </span><span class="na">xmlns:wcm=</span><span class="s">&quot;[http://schemas.microsoft.com/WMIConfig/2002/State](http://schemas.microsoft.com/WMIConfig/2002/State)&quot;</span><span class="w"> </span><span class="na">xmlns:xsi=</span><span class="s">&quot;[http://www.w3.org/2001/XMLSchema-instance](http://www.w3.org/2001/XMLSchema-instance)&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">            </span><span class="nt">&lt;OOBE&gt;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">                </span><span class="nt">&lt;HideEULAPage&gt;</span>true<span class="nt">&lt;/HideEULAPage&gt;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">                </span><span class="nt">&lt;HideOEMRegistrationScreen&gt;</span>true<span class="nt">&lt;/HideOEMRegistrationScreen&gt;</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">                </span><span class="nt">&lt;HideOnlineAccountScreens&gt;</span>true<span class="nt">&lt;/HideOnlineAccountScreens&gt;</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">                </span><span class="nt">&lt;HideLocalAccountScreen&gt;</span>true<span class="nt">&lt;/HideLocalAccountScreen&gt;</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">                </span><span class="nt">&lt;HideWirelessSetup&gt;</span>true<span class="nt">&lt;/HideWirelessSetup&gt;</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">                </span><span class="nt">&lt;ProtectYourPC&gt;</span>3<span class="nt">&lt;/ProtectYourPC&gt;</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">            </span><span class="nt">&lt;/OOBE&gt;</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">            </span><span class="nt">&lt;UserAccounts&gt;</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">                </span><span class="nt">&lt;LocalAccounts&gt;</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">                    </span><span class="nt">&lt;LocalAccount</span><span class="w"> </span><span class="na">wcm:action=</span><span class="s">&quot;add&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">                        </span><span class="nt">&lt;Name&gt;</span>Admin<span class="nt">&lt;/Name&gt;</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">                        </span><span class="nt">&lt;Group&gt;</span>Administrators<span class="nt">&lt;/Group&gt;</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">                        </span><span class="nt">&lt;Password&gt;</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">                            </span><span class="nt">&lt;Value&gt;&lt;/Value&gt;</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">                            </span><span class="nt">&lt;PlainText&gt;</span>true<span class="nt">&lt;/PlainText&gt;</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">                        </span><span class="nt">&lt;/Password&gt;</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">                    </span><span class="nt">&lt;/LocalAccount&gt;</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">                </span><span class="nt">&lt;/LocalAccounts&gt;</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">            </span><span class="nt">&lt;/UserAccounts&gt;</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">        </span><span class="nt">&lt;/component&gt;</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="nt">&lt;/settings&gt;</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="nt">&lt;/unattend&gt;</span>
+</span></code></pre></div>
+</details>
 
 
   <nav class="md-tags" >
@@ -1821,14 +1536,21 @@
       
       
       
-        <span class="md-tag">гайд</span>
+        <span class="md-tag">установка</span>
       
     
       
       
       
       
-        <span class="md-tag">настройка</span>
+        <span class="md-tag">autounattend</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">гайд</span>
       
     
   </nav>
@@ -1850,20 +1572,20 @@
 
   <h2 id="__comments">Комментарии</h2>
   <script src="https://giscus.app/client.js"
-        data-repo="rivzor/my-wiki"
-        data-repo-id="R_kgDOQTve8w"
-        data-category-id="DIC_kwDOQTve884CxwjY"
+        data-repo="rivzor/ri-wiki"
+        data-repo-id="R_kgDOQW2-IQ"
+        data-category="General"
+        data-category-id="DIC_kwDOQW2-Ic4Cx2xB"
         data-mapping="pathname"
         data-strict="0"
         data-reactions-enabled="1"
-        data-emit-metadata="1"
-        data-input-position="top"
+        data-emit-metadata="0"
+        data-input-position="bottom"
         data-theme="preferred_color_scheme"
         data-lang="ru"
-        data-loading="lazy"
         crossorigin="anonymous"
         async>
-    </script>
+</script>
 
   <!-- Synchronize Giscus theme with palette -->
   <script>
@@ -1926,7 +1648,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Нижний колонтитул" >
         
           
-          <a href="activation.html" class="md-footer__link md-footer__link--prev" aria-label="Назад: Активация">
+          <a href="../optimization/" class="md-footer__link md-footer__link--prev" aria-label="Назад: Базовая оптимизация">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -1936,20 +1658,20 @@
                 Назад
               </span>
               <div class="md-ellipsis">
-                Активация
+                Базовая оптимизация
               </div>
             </div>
           </a>
         
         
           
-          <a href="autounattend.html" class="md-footer__link md-footer__link--next" aria-label="Вперед: Файл автоответов">
+          <a href="../../software/pc/rufus/" class="md-footer__link md-footer__link--next" aria-label="Вперед: Rufus">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Вперед
               </span>
               <div class="md-ellipsis">
-                Файл автоответов
+                Rufus
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2041,6 +1763,21 @@
     
     
       
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="github" checked>
+      <span class="task-list-indicator"></span>
+      GitHub
+    </label>
+  </li>
+
+      
     
     
   </ul>
@@ -2069,12 +1806,12 @@
       
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant.prefetch","navigation.instant","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","search.highlight","toc.follow"],"search":"../../assets/javascripts/workers/search.5e1f2129.min.js","tags":null,"translations":{"clipboard.copied":"Скопировано в буфер","clipboard.copy":"Копировать в буфер","search.result.more.one":"Ещё 1 на этой странице","search.result.more.other":"Ещё # на этой странице","search.result.none":"Совпадений не найдено","search.result.one":"Найдено 1 совпадение","search.result.other":"Найдено совпадений: #","search.result.placeholder":"Начните печатать для поиска","search.result.term.missing":"Отсутствует","select.version":"Выберите версию"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant.prefetch","navigation.instant","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","search.highlight","toc.follow"],"search":"../../../assets/javascripts/workers/search.5e1f2129.min.js","tags":null,"translations":{"clipboard.copied":"Скопировано в буфер","clipboard.copy":"Копировать в буфер","search.result.more.one":"Ещё 1 на этой странице","search.result.more.other":"Ещё # на этой странице","search.result.none":"Совпадений не найдено","search.result.one":"Найдено 1 совпадение","search.result.other":"Найдено совпадений: #","search.result.placeholder":"Начните печатать для поиска","search.result.term.missing":"Отсутствует","select.version":"Выберите версию"},"version":null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.21aa498e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.21aa498e.min.js"></script>
       
-        <script src="../../assets/javascript/extra.js"></script>
+        <script src="../../../assets/javascript/extra.js"></script>
       
     
   </body>

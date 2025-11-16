@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/index.html</loc>
+        <loc>https://rivzor.github.io/ri-wiki/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/windows/download.html</loc>
+        <loc>https://rivzor.github.io/ri-wiki/content/windows/download/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/windows/install.html</loc>
+        <loc>https://rivzor.github.io/ri-wiki/content/windows/install/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/windows/activation.html</loc>
+        <loc>https://rivzor.github.io/ri-wiki/content/windows/activation/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/windows/optimization.html</loc>
+        <loc>https://rivzor.github.io/ri-wiki/content/windows/optimization/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/windows/autounattend.html</loc>
+        <loc>https://rivzor.github.io/ri-wiki/content/windows/autounattend/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/software/pc/rufus.html</loc>
+        <loc>https://rivzor.github.io/ri-wiki/content/software/pc/rufus/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/software/pc/peazip.html</loc>
+        <loc>https://rivzor.github.io/ri-wiki/content/software/pc/peazip/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/software/pc/wiztree.html</loc>
+        <loc>https://rivzor.github.io/ri-wiki/content/software/pc/wiztree/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/software/pc/potplayer.html</loc>
+        <loc>https://rivzor.github.io/ri-wiki/content/software/pc/potplayer/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/software/android/byebyedpi.html</loc>
+        <loc>https://rivzor.github.io/ri-wiki/content/software/android/byebyedpi/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/other/adblock.html</loc>
+        <loc>https://rivzor.github.io/ri-wiki/content/other/adblock/</loc>
       </url>
 </urlset>

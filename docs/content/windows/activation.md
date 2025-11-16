@@ -66,6 +66,8 @@ tags:
 | **TSforge** | Windows / ESU / Office | Постоянно   | Да (на новых сборках) |
 | **Online KMS** | Windows / Office | 180 дней (с автообновлением) | Да |
 
----
-
-
+<!-- Донат-блок: статичный, без hover/анимаций -->
+<div class="donate-block">
+  <span class="donate-text">Поддержи Ri-Wiki 🌱</span>
+  <a href="https://your-donate-link" class="donate-link">Донат →</a>
+</div>

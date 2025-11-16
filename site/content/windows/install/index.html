@@ -6,44 +6,46 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Надёжная защита от рекламы, трекеров, всплывающих окон и навязчивых баннеров.">
+        <meta name="description" content="Пошаговый гайд по чистой установке Windows 10 или 11 с флешки, созданной в Rufus.">
       
       
         <meta name="author" content="rivzor">
       
       
-        <link rel="canonical" href="https://rivzor.github.io/ri-wiki/content/other/adblock.html">
+        <link rel="canonical" href="https://rivzor.github.io/ri-wiki/content/windows/install/">
       
       
-        <link rel="prev" href="../software/android/byebyedpi.html">
+        <link rel="prev" href="../download/">
       
+      
+        <link rel="next" href="../activation/">
       
       
         
-          <link rel="alternate" href="../.." hreflang="ru">
+          <link rel="alternate" href="../../.." hreflang="ru">
         
           <link rel="alternate" href="/ri-wiki/en/" hreflang="en">
         
       
       
-      <link rel="icon" href="../../assets/logo.png">
+      <link rel="icon" href="../../../assets/logo.png">
       <meta name="generator" content="zensical-0.0.8">
     
     
       
-        <title>Гайд по блокировке рекламы в браузерах - Ri-Wiki</title>
+        <title>Установка Windows - Ri-Wiki</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.2644c6b7.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/modern/main.2644c6b7.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/modern/palette.dfe2e883.min.css">
       
       
   
@@ -91,9 +93,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
@@ -118,7 +120,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#windows-rufus" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -132,9 +134,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
-    <a href="../../index.html" title="Ri-Wiki" class="md-header__button md-logo" aria-label="Ri-Wiki" data-md-component="logo">
+    <a href="../../.." title="Ri-Wiki" class="md-header__button md-logo" aria-label="Ri-Wiki" data-md-component="logo">
       
-  <img src="../../assets/logo.png" alt="logo">
+  <img src="../../../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -151,7 +153,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Гайд по блокировке рекламы в браузерах
+              Установка Windows
             
           </span>
         </div>
@@ -198,7 +200,7 @@
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="../.." hreflang="ru" class="md-select__link">
+            <a href="../../.." hreflang="ru" class="md-select__link">
               Русский
             </a>
           </li>
@@ -230,6 +232,16 @@
     
     <div class="md-header__source">
       
+        <a href="https://github.com/rivzor/ri-wiki" title="Перейти к репозиторию" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    rivzor/ri-wiki
+  </div>
+</a>
+      
     </div>
   </nav>
   
@@ -251,7 +263,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../index.html" class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   Главная
@@ -265,6 +277,8 @@
   
   
   
+    
+  
   
     
     
@@ -272,11 +286,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../windows/download.html" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../download/" class="md-tabs__link">
           
   
   Руководства
@@ -294,13 +310,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="adblock.html" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../other/adblock/" class="md-tabs__link">
           
   
   Разное
@@ -333,13 +347,25 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навигация" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="Ri-Wiki" class="md-nav__button md-logo" aria-label="Ri-Wiki" data-md-component="logo">
+    <a href="../../.." title="Ri-Wiki" class="md-nav__button md-logo" aria-label="Ri-Wiki" data-md-component="logo">
       
-  <img src="../../assets/logo.png" alt="logo">
+  <img src="../../../assets/logo.png" alt="logo">
 
     </a>
     Ri-Wiki
   </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/rivzor/ri-wiki" title="Перейти к репозиторию" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    rivzor/ri-wiki
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -350,11 +376,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../index.html" class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-home" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-library-big" viewBox="0 0 24 24"><rect width="8" height="18" x="3" y="3" rx="1"/><path d="M7 3v18M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z"/></svg>
   
   <span class="md-ellipsis">
     
@@ -376,8 +402,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -391,19 +419,22 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -421,7 +452,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -436,8 +467,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -454,18 +487,21 @@
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
         
           
-          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
             
   
   
@@ -483,7 +519,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -501,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../windows/download.html" class="md-nav__link">
+      <a href="../download/" class="md-nav__link">
         
   
   
@@ -517,14 +553,6 @@
   </span>
   
   
-    
-  
-  
-    <span class="md-status md-status--hot" title="Горячее">
-    </span>
-  
-
-  
 
       </a>
     </li>
@@ -536,10 +564,39 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../windows/install.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-computer" viewBox="0 0 24 24"><rect width="14" height="8" x="5" y="2" rx="2"/><rect width="20" height="8" x="2" y="14" rx="2"/><path d="M6 18h2M12 18h6"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Установка Windows
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -557,6 +614,84 @@
   
 
       </a>
+      
+        
+
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="На этой странице">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      На этой странице
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Шаг 1: Подготовка
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-usb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Шаг 2: Создание загрузочной USB
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-biosuefi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Шаг 3: Настройка BIOS/UEFI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Шаг 4: Установка Windows
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Шаг 5: После установки
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -569,7 +704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../windows/activation.html" class="md-nav__link">
+      <a href="../activation/" class="md-nav__link">
         
   
   
@@ -665,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../windows/optimization.html" class="md-nav__link">
+      <a href="../optimization/" class="md-nav__link">
         
   
   
@@ -703,7 +838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../windows/autounattend.html" class="md-nav__link">
+      <a href="../autounattend/" class="md-nav__link">
         
   
   
@@ -765,17 +900,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
             
   
   
@@ -811,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/pc/rufus.html" class="md-nav__link">
+      <a href="../../software/pc/rufus/" class="md-nav__link">
         
   
   
@@ -841,7 +979,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/pc/peazip.html" class="md-nav__link">
+      <a href="../../software/pc/peazip/" class="md-nav__link">
         
   
   
@@ -871,7 +1009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/pc/wiztree.html" class="md-nav__link">
+      <a href="../../software/pc/wiztree/" class="md-nav__link">
         
   
   
@@ -901,7 +1039,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/pc/potplayer.html" class="md-nav__link">
+      <a href="../../software/pc/potplayer/" class="md-nav__link">
         
   
   
@@ -949,17 +1087,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
         
           
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
             
   
   
@@ -995,7 +1136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/android/byebyedpi.html" class="md-nav__link">
+      <a href="../../software/android/byebyedpi/" class="md-nav__link">
         
   
   
@@ -1037,10 +1178,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -1050,22 +1189,19 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -1083,7 +1219,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1098,39 +1234,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
-  
-  <span class="md-ellipsis">
-    
-  
-    Гайд по блокировке рекламы в браузерах
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="adblock.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../other/adblock/" class="md-nav__link">
         
   
   
@@ -1148,90 +1255,6 @@
   
 
       </a>
-      
-        
-
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="На этой странице">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      На этой странице
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Расширения
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ublock-origin" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Настройка uBlock Origin
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Настройка uBlock Origin">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Пользовательские фильтры
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#violentmonkey" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Violentmonkey
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Проверка блокировщика
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1274,10 +1297,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Расширения
+        Шаг 1: Подготовка
       
     </span>
   </a>
@@ -1285,38 +1308,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ublock-origin" class="md-nav__link">
+  <a href="#2-usb" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Настройка uBlock Origin
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Настройка uBlock Origin">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Пользовательские фильтры
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#violentmonkey" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Violentmonkey
+        Шаг 2: Создание загрузочной USB
       
     </span>
   </a>
@@ -1324,10 +1319,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#3-biosuefi" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Проверка блокировщика
+        Шаг 3: Настройка BIOS/UEFI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Шаг 4: Установка Windows
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Шаг 5: После установки
       
     </span>
   </a>
@@ -1359,7 +1376,7 @@
   
   
     <li class="md-path__item">
-      <a href="../../index.html" class="md-path__link">
+      <a href="../../.." class="md-path__link">
         
   <span class="md-ellipsis">
     Главная
@@ -1376,11 +1393,37 @@
   
     
     
+      
+  
+  
+    
+    
       <li class="md-path__item">
-        <a href="adblock.html" class="md-path__link">
+        <a href="../download/" class="md-path__link">
           
   <span class="md-ellipsis">
-    Разное
+    Руководства
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../download/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Windows
   </span>
 
         </a>
@@ -1396,142 +1439,101 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
+  
 
-<h1 id="_1">Гайд по блокировке рекламы в браузерах<a class="headerlink" href="#_1" title="Ссылка на этот раздел">#</a></h1>
-<blockquote>
-<p>Надёжная защита от рекламы, трекеров, всплывающих окон и навязчивых баннеров.</p>
-</blockquote>
-<hr />
-<h2 data-search-exclude="data-search-exclude" id="_2">Расширения<a class="headerlink" href="#_2" title="Ссылка на этот раздел">#</a></h2>
-<table>
-<thead>
-<tr>
-<th>Название</th>
-<th>Описание</th>
-<th style="text-align: center;">Chrome</th>
-<th style="text-align: center;">Firefox</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>I still don't care about cookies</strong></td>
-<td>Убирает баннеры “Примите куки”</td>
-<td style="text-align: center;"><a href="https://chromewebstore.google.com/detail/edibdbjcniadpccecjdfdjjppcpchdlm">⬇️ Установить</a></td>
-<td style="text-align: center;"><a href="https://addons.mozilla.org/en-US/firefox/addon/istilldontcareaboutcookies/">🦊 Установить</a></td>
-</tr>
-<tr>
-<td><strong>uBlock Origin</strong></td>
-<td>Мощный блокировщик рекламы и трекеров</td>
-<td style="text-align: center;"><a href="https://chromewebstore.google.com/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm">⬇️ Установить</a></td>
-<td style="text-align: center;"><a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/">🦊 Установить</a></td>
-</tr>
-<tr>
-<td><strong>Decentraleyes</strong></td>
-<td>Локально кэширует CDN-файлы, ускоряет сайты, защищает от трекинга</td>
-<td style="text-align: center;"><a href="https://chromewebstore.google.com/detail/ldpochfccmkkmhdbclfhpagapcfdljkj">⬇️ Установить</a></td>
-<td style="text-align: center;"><a href="https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/">🦊 Установить</a></td>
-</tr>
-<tr>
-<td><strong>Privacy Badger</strong></td>
-<td>Автоматически блокирует невидимые трекеры</td>
-<td style="text-align: center;"><a href="https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp">⬇️ Установить</a></td>
-<td style="text-align: center;"><a href="https://addons.mozilla.org/firefox/addon/privacy-badger17/">🦊 Установить</a></td>
-</tr>
-<tr>
-<td><strong>Violentmonkey</strong></td>
-<td>Аналог Tampermonkey, для пользовательских скриптов</td>
-<td style="text-align: center;"><a href="https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag">⬇️ Установить</a></td>
-<td style="text-align: center;"><a href="https://addons.mozilla.org/firefox/addon/violentmonkey/">🦊 Установить</a></td>
-</tr>
-</tbody>
-</table>
+
+<h1 data-search-exclude="data-search-exclude" id="windows-rufus">Установка Windows с помощью Rufus<a class="headerlink" href="#windows-rufus" title="Ссылка на этот раздел">#</a></h1>
+<p>Этот гайд - пошаговая инструкция по чистой установке Windows (10 или 11) с нуля. Мы будем использовать Rufus для создания загрузочной флешки.</p>
 <div class="admonition info">
-<p class="admonition-title">Просто установить:</p>
+<p class="admonition-title">Обзор</p>
 <ul>
-<li><strong>I still don’t care about cookies</strong></li>
-<li><strong>Decentraleyes</strong></li>
-<li><strong>Privacy Badger</strong></li>
+<li><strong>Что делаем?</strong> Чистая установка Windows.</li>
+<li><strong>Инструмент:</strong> Rufus.</li>
+<li><strong>Требования:</strong> ПК с UEFI (для Win 11 также TPM 2.0 и Secure Boot).</li>
+<li><strong>Время:</strong> 30-60 минут.</li>
 </ul>
 </div>
-<p>Эти три расширения работают автоматически и не требуют сложной настройки.</p>
 <hr />
-<h2 id="ublock-origin">Настройка uBlock Origin<a class="headerlink" href="#ublock-origin" title="Ссылка на этот раздел">#</a></h2>
-<p>После установки:</p>
+<h2 data-search-exclude="data-search-exclude" id="1">Шаг 1: Подготовка<a class="headerlink" href="#1" title="Ссылка на этот раздел">#</a></h2>
+<p>Сперва нужно собрать все необходимое.</p>
+<ul>
+<li><strong>ISO-образ Windows:</strong> Нужен оригинальный образ. Для Windows 11 убедитесь, что ваш ПК подходит по системным требованиям (процессор Intel 8+ gen / AMD Ryzen 2000+).</li>
+<li><strong>Rufus:</strong> Скачайте последнюю версию с официального сайта. Portable-версия удобнее, так как не требует установки.</li>
+<li><strong>USB-накопитель:</strong> Флешка на 8 ГБ или больше. <strong>Все данные на ней будут удалены.</strong> Лучше взять USB 3.0, так будет быстрее.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Бэкап!</p>
+<p>Перед установкой <strong>обязательно</strong> скопируйте все важные данные с ПК. Процесс установки форматирует диск.</p>
+</div>
+<p><a class="md-button md-button--primary" href="../download/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7z"/></svg></span> Скачать образ Windows</a></p>
+<p><a class="md-button" href="../../software/pc/rufus/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 15c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1m7.07-10.31L16.5 6.1l-1.43 1.4-1.41-1.4zM17.9 7.5l1.41 1.43-1.41 1.41-1.4-1.41zM8 13c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3m1.77-8.67.73.75 3.79-3.79c.18-.18.43-.29.71-.29s.53.11.71.29l7.07 7.07v.01a1.02 1.02 0 0 1-.12 1.39l-3.73 3.74.74.73-6.72 6.72A6.98 6.98 0 0 1 8 23c-3.87 0-7-3.13-7-7 0-1.93.78-3.68 2.05-4.95zM20.59 9 15 3.41 11.93 6.5l5.57 5.58z"/></svg></span> О программе Rufus</a></p>
+<hr />
+<h2 data-search-exclude="data-search-exclude" id="2-usb">Шаг 2: Создание загрузочной USB<a class="headerlink" href="#2-usb" title="Ссылка на этот раздел">#</a></h2>
 <ol>
-<li>Открой расширение в браузере.</li>
-<li>Зайди в <strong>Настройки</strong> → <strong>Панель фильтров</strong>.</li>
+<li>Вставьте флешку в ПК.</li>
+<li>Запустите Rufus (лучше от имени администратора).</li>
+<li>Настройте параметры в программе:<ul>
+<li><strong>Устройство (Device):</strong> Выберите вашу флешку. Убедитесь, что это она, чтобы не стереть другой диск.</li>
+<li><strong>Метод загрузки (Boot selection):</strong> Нажмите "ВЫБРАТЬ" (SELECT) и укажите путь к вашему ISO-образу Windows.</li>
+<li><strong>Схема раздела (Partition scheme):</strong> <strong>GPT</strong>. Это стандарт для UEFI. (MBR нужен только для очень старых ПК с Legacy BIOS).</li>
+<li><strong>Целевая система (Target system):</strong> <strong>UEFI (non CSM)</strong>.</li>
+<li><strong>Файловая система:</strong> <strong>NTFS</strong>.</li>
+</ul>
+</li>
+<li>Нажмите "СТАРТ". Rufus может предложить скачать доп. файлы (Syslinux) - соглашайтесь.</li>
+<li>Процесс займет 5-10 минут.</li>
 </ol>
-<h3 data-search-exclude="data-search-exclude" id="_3">Пользовательские фильтры<a class="headerlink" href="#_3" title="Ссылка на этот раздел">#</a></h3>
-<p>Скопируй адреса ниже и добавь их в поле <strong>Импортировать</strong> (вкладка <em>Мои фильтры → Импортировать</em>), каждый с новой строки:</p>
-<div class="language-yaml highlight"><span class="filename">Ссылки на фильтры</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="l l-Scalar l-Scalar-Plain">https://filters.adtidy.org/extension/ublock/filters/1.txt</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="l l-Scalar l-Scalar-Plain">https://raw.githubusercontent.com/mtxadmin/ublock/master/it</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="l l-Scalar l-Scalar-Plain">https://raw.githubusercontent.com/mtxadmin/ublock/master/filters/yandex</span><span class="w"> </span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="l l-Scalar l-Scalar-Plain">https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt</span><span class="w"> </span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="l l-Scalar l-Scalar-Plain">https://easylist-downloads.adblockplus.org/cntblock.txt</span><span class="w"> </span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="l l-Scalar l-Scalar-Plain">https://easylist-downloads.adblockplus.org/bitblock.txt</span><span class="w"> </span>
-</span></code></pre></div>
-<details class="question">
-<summary>Что за фильтры?</summary>
-<ol>
-<li><strong>AdGuard Russian filter</strong> — основной русский фильтр.</li>
-<li><strong>Yet another small uBlock list</strong> — анти-мошеннический и анти-трекерный.</li>
-<li><strong>Яндекс фильтр</strong> — убирает баннеры и крупные лого.</li>
-<li><strong>NoCoin</strong> — блокировка скрытого майнинга.
-5 и 6. <strong>RU AdList Counters / BitBlock</strong> — доп. фильтры для счётчиков и визуального мусора.</li>
-</ol>
+<details>
+<summary>Совет для Windows 11 (Обход TPM)</summary>
+<p>Если ваш ПК не соответствует требованиям (нет TPM или Secure Boot), Rufus 4.x сам это определит и предложит опцию "Remove requirements for..." (Убрать требования). Оставьте эту галочку включенной.</p>
 </details>
 <hr />
-<h2 id="violentmonkey">Violentmonkey<a class="headerlink" href="#violentmonkey" title="Ссылка на этот раздел">#</a></h2>
-<p>После установки открыть данные скрипты и нажать установить:</p>
-<table>
-<thead>
-<tr>
-<th>Название</th>
-<th>Описание</th>
-<th>Ссылка</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>RU AdList JS Fixes</strong></td>
-<td>Убирает скрипты Яндекса и прочих</td>
-<td><a href="https://greasyfork.org/ru/scripts/19993-ru-adlist-js-fixes">Установить</a></td>
-</tr>
-<tr>
-<td><strong>AdGuard Extra</strong></td>
-<td>Расширенный юзерскрипт для защиты от сложной рекламы</td>
-<td><a href="https://userscripts.adtidy.org/release/adguard-extra/1.0/adguard-extra.user.js">Установить</a></td>
-</tr>
-</tbody>
-</table>
+<h2 data-search-exclude="data-search-exclude" id="3-biosuefi">Шаг 3: Настройка BIOS/UEFI<a class="headerlink" href="#3-biosuefi" title="Ссылка на этот раздел">#</a></h2>
+<ol>
+<li>Перезагрузите ПК. Как только он начнет включаться, жмите клавишу входа в BIOS. Обычно это <span class="keys"><kbd class="key-delete">Del</kbd></span>, <span class="keys"><kbd class="key-f2">F2</kbd></span>, <span class="keys"><kbd class="key-f10">F10</kbd></span> или <span class="keys"><kbd class="key-escape">Esc</kbd></span>.</li>
+<li>Найдите раздел "Boot" (Загрузка).</li>
+<li>Установите вашу USB-флешку на <strong>первое место</strong> в порядке загрузки (Boot Order / Boot Priority).</li>
+<li>(Для Windows 11) Убедитесь, что <strong>Secure Boot</strong> включен (если Rufus не обходит это).</li>
+<li>Сохраните настройки и выйдите (обычно <span class="keys"><kbd class="key-f10">F10</kbd></span> -&gt; <span class="keys"><kbd class="key-enter">Enter</kbd></span>).</li>
+</ol>
 <hr />
-<h2 data-search-exclude="data-search-exclude" id="_4">Проверка блокировщика<a class="headerlink" href="#_4" title="Ссылка на этот раздел">#</a></h2>
-<p>В этих тестах должно быть <strong>100 из 100 баллов</strong>, только тогда рекламы видно не будет!</p>
-<p>Проверь работу фильтров на:</p>
-<table>
-<thead>
-<tr>
-<th>Сайт</th>
-<th>Назначение</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>🔗 <a href="https://adblock.turtlecute.org/">Test Ad Block – Toolz</a></td>
-<td>Полная проверка блокировщика</td>
-</tr>
-<tr>
-<td>🔗 <a href="https://checkadblock.ru">CheckAdBlock</a></td>
-<td>Базовая проверка на наличие рекламы</td>
-</tr>
-</tbody>
-</table>
-<p>Сайты яндекса:</p>
-<ul>
-<li><a href="https://yandex.ru/pogoda">Яндекс Погода</a></li>
-<li><a href="https://yandex.ru/images">Яндекс Картинки</a></li>
-<li><a href="https://direct.yandex.ru">Сайты с Директом</a></li>
+<h2 data-search-exclude="data-search-exclude" id="4-windows">Шаг 4: Установка Windows<a class="headerlink" href="#4-windows" title="Ссылка на этот раздел">#</a></h2>
+<ol>
+<li>ПК перезагрузится и автоматически начнет загрузку с флешки.</li>
+<li>Появится установщик Windows.</li>
+<li>Выберите язык, время и раскладку. Нажмите "Далее".</li>
+<li>"Установить" (Install now).</li>
+<li>Введите ключ (или нажмите "У меня нет ключа", чтобы активировать позже).</li>
+<li>Выберите редакцию (Home / Pro).</li>
+<li>Примите лицензию.</li>
+<li><strong>Тип установки:</strong> Выберите <strong>"Выборочная" (Custom)</strong>. Это и есть чистая установка.</li>
+<li><strong>Выбор диска:</strong> Вы увидите список разделов.<ul>
+<li>Если диск чистый, просто выберите "Незанятое пространство" и жмите "Далее".</li>
+<li>Если на диске уже стояла система, <strong>удалите</strong> все старые разделы (System, Recovery, MSR, Primary), пока не останется один пункт "Незанятое пространство". Выберите его и жмите "Далее".</li>
 </ul>
+</li>
+<li>Начнется копирование файлов.</li>
+</ol>
+<hr />
+<h2 data-search-exclude="data-search-exclude" id="5">Шаг 5: После установки<a class="headerlink" href="#5" title="Ссылка на этот раздел">#</a></h2>
+<p>Windows будет копировать файлы и несколько раз перезагрузится.</p>
+<ol>
+<li>После перезагрузок начнется настройка "OOBE" (выбор региона, подключение к сети, создание аккаунта).</li>
+<li>Как только попадете на рабочий стол, первым делом проверьте драйверы.</li>
+<li>Зайдите в "Центр обновления Windows" (Windows Update) и запустите поиск. Он скачает большинство драйверов.</li>
+<li>Драйвер для видеокарты (NVIDIA/AMD/Intel) лучше скачать с официального сайта.</li>
+<li>Активируйте Windows в Настройках.</li>
+</ol>
+<div class="admonition success">
+<p class="admonition-title">Готово</p>
+<p>Windows установлена. Если что-то пошло не так (ошибка копирования файлов) - попробуйте другую флешку или проверьте скачанный ISO-образ.</p>
+</div>
+<!-- Донат-блок: статичный, без hover/анимаций -->
+<div class="donate-block">
+  <span class="donate-text">Поддержи Ri-Wiki 🌱</span>
+  <a href="https://your-donate-link" class="donate-link">Донат →</a>
+</div>
 
 
   <nav class="md-tags" >
@@ -1540,28 +1542,28 @@
       
       
       
-        <span class="md-tag">реклама</span>
+        <span class="md-tag">винда</span>
       
     
       
       
       
       
-        <span class="md-tag">приватность</span>
+        <span class="md-tag">гайд</span>
       
     
       
       
       
       
-        <span class="md-tag">браузеры</span>
+        <span class="md-tag">установка винды</span>
       
     
       
       
       
       
-        <span class="md-tag">расширения</span>
+        <span class="md-tag">rufus</span>
       
     
   </nav>
@@ -1583,20 +1585,20 @@
 
   <h2 id="__comments">Комментарии</h2>
   <script src="https://giscus.app/client.js"
-        data-repo="rivzor/my-wiki"
-        data-repo-id="R_kgDOQTve8w"
-        data-category-id="DIC_kwDOQTve884CxwjY"
+        data-repo="rivzor/ri-wiki"
+        data-repo-id="R_kgDOQW2-IQ"
+        data-category="General"
+        data-category-id="DIC_kwDOQW2-Ic4Cx2xB"
         data-mapping="pathname"
         data-strict="0"
         data-reactions-enabled="1"
-        data-emit-metadata="1"
-        data-input-position="top"
+        data-emit-metadata="0"
+        data-input-position="bottom"
         data-theme="preferred_color_scheme"
         data-lang="ru"
-        data-loading="lazy"
         crossorigin="anonymous"
         async>
-    </script>
+</script>
 
   <!-- Synchronize Giscus theme with palette -->
   <script>
@@ -1659,7 +1661,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Нижний колонтитул" >
         
           
-          <a href="../software/android/byebyedpi.html" class="md-footer__link md-footer__link--prev" aria-label="Назад: ByeByeDPI">
+          <a href="../download/" class="md-footer__link md-footer__link--prev" aria-label="Назад: Скачать Windows">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -1669,11 +1671,27 @@
                 Назад
               </span>
               <div class="md-ellipsis">
-                ByeByeDPI
+                Скачать Windows
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="../activation/" class="md-footer__link md-footer__link--next" aria-label="Вперед: Активация">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Вперед
+              </span>
+              <div class="md-ellipsis">
+                Активация
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
         
       </nav>
     
@@ -1758,6 +1776,21 @@
     
     
       
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="github" checked>
+      <span class="task-list-indicator"></span>
+      GitHub
+    </label>
+  </li>
+
+      
     
     
   </ul>
@@ -1786,12 +1819,12 @@
       
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant.prefetch","navigation.instant","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","search.highlight","toc.follow"],"search":"../../assets/javascripts/workers/search.5e1f2129.min.js","tags":null,"translations":{"clipboard.copied":"Скопировано в буфер","clipboard.copy":"Копировать в буфер","search.result.more.one":"Ещё 1 на этой странице","search.result.more.other":"Ещё # на этой странице","search.result.none":"Совпадений не найдено","search.result.one":"Найдено 1 совпадение","search.result.other":"Найдено совпадений: #","search.result.placeholder":"Начните печатать для поиска","search.result.term.missing":"Отсутствует","select.version":"Выберите версию"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant.prefetch","navigation.instant","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","search.highlight","toc.follow"],"search":"../../../assets/javascripts/workers/search.5e1f2129.min.js","tags":null,"translations":{"clipboard.copied":"Скопировано в буфер","clipboard.copy":"Копировать в буфер","search.result.more.one":"Ещё 1 на этой странице","search.result.more.other":"Ещё # на этой странице","search.result.none":"Совпадений не найдено","search.result.one":"Найдено 1 совпадение","search.result.other":"Найдено совпадений: #","search.result.placeholder":"Начните печатать для поиска","search.result.term.missing":"Отсутствует","select.version":"Выберите версию"},"version":null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.21aa498e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.21aa498e.min.js"></script>
       
-        <script src="../../assets/javascript/extra.js"></script>
+        <script src="../../../assets/javascript/extra.js"></script>
       
     
   </body>

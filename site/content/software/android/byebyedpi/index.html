@@ -6,46 +6,46 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Создание и использование файла autounattend.xml для полной автоматизации установки Windows.">
+        <meta name="description" content="ByeByeDPI — приложение для Android, которое запускает локальный VPN-сервис для обхода DPI (Deep Packet Inspection) и цензуры, без передачи трафика на удаленные серверы.">
       
       
         <meta name="author" content="rivzor">
       
       
-        <link rel="canonical" href="https://rivzor.github.io/ri-wiki/content/windows/autounattend.html">
+        <link rel="canonical" href="https://rivzor.github.io/ri-wiki/content/software/android/byebyedpi/">
       
       
-        <link rel="prev" href="optimization.html">
+        <link rel="prev" href="../../pc/potplayer/">
       
       
-        <link rel="next" href="../software/pc/rufus.html">
+        <link rel="next" href="../../../other/adblock/">
       
       
         
-          <link rel="alternate" href="../.." hreflang="ru">
+          <link rel="alternate" href="../../../.." hreflang="ru">
         
           <link rel="alternate" href="/ri-wiki/en/" hreflang="en">
         
       
       
-      <link rel="icon" href="../../assets/logo.png">
+      <link rel="icon" href="../../../../assets/logo.png">
       <meta name="generator" content="zensical-0.0.8">
     
     
       
-        <title>Файл автоответов - Ri-Wiki</title>
+        <title>ByeByeDPI - Ri-Wiki</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.2644c6b7.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/modern/main.2644c6b7.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/modern/palette.dfe2e883.min.css">
       
       
   
@@ -93,9 +93,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
@@ -120,7 +120,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#autounattendxml" class="md-skip">
+        <a href="#byebyedpi" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -134,9 +134,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
-    <a href="../../index.html" title="Ri-Wiki" class="md-header__button md-logo" aria-label="Ri-Wiki" data-md-component="logo">
+    <a href="../../../.." title="Ri-Wiki" class="md-header__button md-logo" aria-label="Ri-Wiki" data-md-component="logo">
       
-  <img src="../../assets/logo.png" alt="logo">
+  <img src="../../../../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -153,7 +153,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Файл автоответов
+              ByeByeDPI
             
           </span>
         </div>
@@ -200,7 +200,7 @@
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="../.." hreflang="ru" class="md-select__link">
+            <a href="../../../.." hreflang="ru" class="md-select__link">
               Русский
             </a>
           </li>
@@ -232,6 +232,16 @@
     
     <div class="md-header__source">
       
+        <a href="https://github.com/rivzor/ri-wiki" title="Перейти к репозиторию" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    rivzor/ri-wiki
+  </div>
+</a>
+      
     </div>
   </nav>
   
@@ -253,7 +263,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../index.html" class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   Главная
@@ -282,7 +292,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="download.html" class="md-tabs__link">
+        <a href="../../../windows/download/" class="md-tabs__link">
           
   
   Руководства
@@ -304,7 +314,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../other/adblock.html" class="md-tabs__link">
+        <a href="../../../other/adblock/" class="md-tabs__link">
           
   
   Разное
@@ -337,13 +347,25 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навигация" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="Ri-Wiki" class="md-nav__button md-logo" aria-label="Ri-Wiki" data-md-component="logo">
+    <a href="../../../.." title="Ri-Wiki" class="md-nav__button md-logo" aria-label="Ri-Wiki" data-md-component="logo">
       
-  <img src="../../assets/logo.png" alt="logo">
+  <img src="../../../../assets/logo.png" alt="logo">
 
     </a>
     Ri-Wiki
   </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/rivzor/ri-wiki" title="Перейти к репозиторию" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    rivzor/ri-wiki
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -354,11 +376,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../index.html" class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-home" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-library-big" viewBox="0 0 24 24"><rect width="8" height="18" x="3" y="3" rx="1"/><path d="M7 3v18M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z"/></svg>
   
   <span class="md-ellipsis">
     
@@ -445,8 +467,6 @@
                 
   
   
-    
-  
   
   
     
@@ -472,11 +492,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
         
           
           <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
@@ -497,7 +517,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -515,7 +535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="download.html" class="md-nav__link">
+      <a href="../../../windows/download/" class="md-nav__link">
         
   
   
@@ -531,14 +551,6 @@
   </span>
   
   
-    
-  
-  
-    <span class="md-status md-status--hot" title="Горячее">
-    </span>
-  
-
-  
 
       </a>
     </li>
@@ -553,7 +565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="install.html" class="md-nav__link">
+      <a href="../../../windows/install/" class="md-nav__link">
         
   
   
@@ -583,7 +595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="activation.html" class="md-nav__link">
+      <a href="../../../windows/activation/" class="md-nav__link">
         
   
   
@@ -618,10 +630,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -638,11 +648,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_4" >
         
           
           <label class="md-nav__link" for="__nav_2_1_4" id="__nav_2_1_4_label" tabindex="0">
@@ -663,7 +673,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_1_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -681,7 +691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="optimization.html" class="md-nav__link">
+      <a href="../../../windows/optimization/" class="md-nav__link">
         
   
   
@@ -716,39 +726,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-file-cog" viewBox="0 0 24 24"><path d="M14 2v4a2 2 0 0 0 2 2h4M2.305 15.53l.923-.382M3.228 12.852l-.924-.383"/><path d="M4.677 21.5a2 2 0 0 0 1.313.5H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v2.5M4.852 11.228l-.383-.923M4.852 16.772l-.383.924M7.148 11.228l.383-.923M7.53 17.696l-.382-.924M8.772 12.852l.923-.383M8.772 15.148l.923.383"/><circle cx="6" cy="14" r="3"/></svg>
-  
-  <span class="md-ellipsis">
-    
-  
-    Файл автоответов
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="autounattend.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../windows/autounattend/" class="md-nav__link">
         
   
   
@@ -766,68 +747,6 @@
   
 
       </a>
-      
-        
-
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="На этой странице">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      На этой странице
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Шаг 1: Онлайн-генератор
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Шаг 1: Онлайн-генератор">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Как пользоваться генератором
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Шаг 2: Использование файла
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -921,7 +840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/pc/rufus.html" class="md-nav__link">
+      <a href="../../pc/rufus/" class="md-nav__link">
         
   
   
@@ -951,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/pc/peazip.html" class="md-nav__link">
+      <a href="../../pc/peazip/" class="md-nav__link">
         
   
   
@@ -981,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/pc/wiztree.html" class="md-nav__link">
+      <a href="../../pc/wiztree/" class="md-nav__link">
         
   
   
@@ -1011,7 +930,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/pc/potplayer.html" class="md-nav__link">
+      <a href="../../pc/potplayer/" class="md-nav__link">
         
   
   
@@ -1046,6 +965,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1065,11 +986,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
@@ -1090,7 +1011,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1105,10 +1026,39 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../software/android/byebyedpi.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-antenna" viewBox="0 0 24 24"><path d="M2 12 7 2M7 12l5-10M12 12l5-10M17 12l5-10M4.5 7h15M12 16v6"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    ByeByeDPI
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1126,6 +1076,62 @@
   
 
       </a>
+      
+        
+
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="На этой странице">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      На этой странице
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Возможности
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Основная информация
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Скачать
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1209,7 +1215,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../other/adblock.html" class="md-nav__link">
+      <a href="../../../other/adblock/" class="md-nav__link">
         
   
   
@@ -1269,38 +1275,32 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Шаг 1: Онлайн-генератор
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Шаг 1: Онлайн-генератор">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Как пользоваться генератором
+        Возможности
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Шаг 2: Использование файла
+        Основная информация
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Скачать
       
     </span>
   </a>
@@ -1332,7 +1332,7 @@
   
   
     <li class="md-path__item">
-      <a href="../../index.html" class="md-path__link">
+      <a href="../../../.." class="md-path__link">
         
   <span class="md-ellipsis">
     Главная
@@ -1355,7 +1355,7 @@
     
     
       <li class="md-path__item">
-        <a href="download.html" class="md-path__link">
+        <a href="../../../windows/download/" class="md-path__link">
           
   <span class="md-ellipsis">
     Руководства
@@ -1376,28 +1376,10 @@
     
     
       <li class="md-path__item">
-        <a href="download.html" class="md-path__link">
+        <a href="./" class="md-path__link">
           
   <span class="md-ellipsis">
-    Windows
-  </span>
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-    
-    
-      <li class="md-path__item">
-        <a href="optimization.html" class="md-path__link">
-          
-  <span class="md-ellipsis">
-    Оптимизация
+    Программы на Андроид
   </span>
 
         </a>
@@ -1413,89 +1395,67 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
+  
 
-<h1 id="autounattendxml">Файл автоответов (autounattend.xml)<a class="headerlink" href="#autounattendxml" title="Ссылка на этот раздел">#</a></h1>
-<blockquote>
-<p>Как пропустить все окна настройки (OOBE) при установке Windows и сразу попасть на рабочий стол с готовым пользователем.</p>
-</blockquote>
-<hr />
-<div class="admonition question">
-<p class="admonition-title">Что такое autounattend.xml?</p>
-<p><code>autounattend.xml</code> - это специальный XML-файл, который содержит ответы на все вопросы установщика Windows. Он позволяет полностью автоматизировать процесс установки: от выбора языка и принятия EULA до создания учетных записей и настройки параметров приватности.</p>
-</div>
-<h2 data-search-exclude="data-search-exclude" id="1-">Шаг 1: Онлайн-генератор<a class="headerlink" href="#1-" title="Ссылка на этот раздел">#</a></h2>
-<p>Самый простой способ создать корректный файл — использовать онлайн-генератор. Он предоставляет удобный веб-интерфейс для выбора всех необходимых опций.</p>
-<p><a class="md-button md-button--primary" href="https://schneegans.de/windows/unattend-generator/">:material-web: Перейти к Unattend Generator</a></p>
-<h3 data-search-exclude="data-search-exclude" id="_1">Как пользоваться генератором<a class="headerlink" href="#_1" title="Ссылка на этот раздел">#</a></h3>
-<ol>
-<li><strong>System:</strong> Выберите версию Windows (10/11), которую вы устанавливаете.</li>
-<li><strong>General:</strong> Укажите имя компьютера, ключ продукта (можно оставить пустым для активации позже) и настройки приватности (рекомендуется "Disable All" для максимальной конфиденциальности).</li>
-<li><strong>User Account:</strong> Самая важная часть.<ul>
-<li><strong>Name:</strong> Имя вашего локального пользователя (например, <code>Admin</code> или <code>rivzor</code>).</li>
-<li><strong>Password:</strong> Укажите пароль.</li>
-<li><strong>Auto-Logon:</strong> Включите, если хотите автоматически входить в систему при запуске.</li>
+
+<h1 id="byebyedpi">ByeByeDPI<a class="headerlink" href="#byebyedpi" title="Ссылка на этот раздел">#</a></h1>
+<p><img align="left" alt="ByeByeDPI" loading="lazy" src="https://github.com/romanvht/ByeDPIAndroid/raw/master/.github/images/app.svg" width="70" />
+ByeByeDPI — инструмент для обхода блокировок на Android. Оно использует SOCKS5-прокси для перенаправления трафика локально, не шифруя данные и не скрывая IP.</p>
+<h3 data-search-exclude="data-search-exclude" id="_1">Возможности<a class="headerlink" href="#_1" title="Ссылка на этот раздел">#</a></h3>
+<ul>
+<li>Обход DPI и цензуры</li>
+<li>Локальный VPN-режим без удаленного сервера</li>
+<li>Перенаправление трафика через SOCKS5-прокси</li>
+<li>Настройка параметров для разных стратегий</li>
+<li>Поддержка Android TV и роутеров (с настройкой)</li>
 </ul>
-</li>
-<li><strong>Региональные настройки (Regional):</strong> Выберите язык системы, раскладку клавиатуры (<code>ru-RU</code>) и часовой пояс.</li>
-<li><strong>OOBE (Out-of-Box Experience):</strong> Установите "Skip all" (Пропустить всё), чтобы не видеть экраны приветствия.</li>
-<li><strong>Disk Configuration:</strong> Можно оставить по умолчанию (Wipe &amp; Use entire disk), если вы устанавливаете систему на чистый диск.</li>
-</ol>
-<div class="admonition warning">
-<p class="admonition-title">Пароль</p>
-<p>Если вы указываете пароль в генераторе, он будет сохранен в XML-файле в виде простого текста (Base64). Не используйте этот файл на флешках, к которым имеют доступ посторонние. Для локального использования это безопасно.</p>
-</div>
-<p>После настройки всех параметров нажмите кнопку <strong>"Download File"</strong> внизу страницы. Переименуйте скачанный файл в <code>autounattend.xml</code>.</p>
 <hr />
-<h2 data-search-exclude="data-search-exclude" id="2">Шаг 2: Использование файла<a class="headerlink" href="#2" title="Ссылка на этот раздел">#</a></h2>
-<p>Чтобы установщик Windows "подхватил" файл, его нужно правильно разместить.</p>
-<ol>
-<li>
-<p><strong>Подготовьте флешку:</strong> Создайте загрузочную USB-флешку с Windows. Вы можете использовать для этого Rufus, как описано в другом гайде.</p>
-<p><a class="md-button" href="install.html">:material-page-next-outline: Гайд по установке Windows</a></p>
-<p><a class="md-button" href="../software/pc/rufus.html">:material-usb-flash-drive: О программе Rufus</a></p>
-</li>
-<li>
-<p><strong>Скопируйте файл:</strong> Просто скопируйте ваш готовый файл <code>autounattend.xml</code> в <strong>корень</strong> созданной загрузочной USB-флешки (рядом с <code>setup.exe</code> и другими папками).</p>
-</li>
-<li>
-<p><strong>Начните установку:</strong> Загрузитесь с этой флешки.</p>
-</li>
-</ol>
-<div class="admonition success">
-<p class="admonition-title">Готово!</p>
-<p>Если все сделано правильно, вы не увидите ни одного окна настройки. Установка скопирует файлы, несколько раз перезагрузит ПК и сразу же загрузит рабочий стол созданного вами пользователя.</p>
-</div>
-<details class="example">
-<summary>Минимальный пример <code>autounattend.xml</code> (Только пропуск OOBE)</summary>
-<p>Если вам не нужно создавать пользователя, а просто пропустить надоедливые экраны OOBE (например, при установке в виртуальной машине), вы можете использовать этот минимальный файл. Он заставит систему пропустить OOBE и создать пользователя без пароля.</p>
-<div class="language-xml highlight"><span class="filename">autounattend.xml</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">&lt;unattend</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;urn:schemas-microsoft-com:unattend&quot;</span><span class="nt">&gt;</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">&lt;settings</span><span class="w"> </span><span class="na">pass=</span><span class="s">&quot;oobeSystem&quot;</span><span class="nt">&gt;</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="nt">&lt;component</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Microsoft-Windows-Shell-Setup&quot;</span><span class="w"> </span><span class="na">processorArchitecture=</span><span class="s">&quot;amd64&quot;</span><span class="w"> </span><span class="na">publicKeyToken=</span><span class="s">&quot;31bf3856ad364e35&quot;</span><span class="w"> </span><span class="na">language=</span><span class="s">&quot;neutral&quot;</span><span class="w"> </span><span class="na">versionScope=</span><span class="s">&quot;nonSxS&quot;</span><span class="w"> </span><span class="na">xmlns:wcm=</span><span class="s">&quot;[http://schemas.microsoft.com/WMIConfig/2002/State](http://schemas.microsoft.com/WMIConfig/2002/State)&quot;</span><span class="w"> </span><span class="na">xmlns:xsi=</span><span class="s">&quot;[http://www.w3.org/2001/XMLSchema-instance](http://www.w3.org/2001/XMLSchema-instance)&quot;</span><span class="nt">&gt;</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">            </span><span class="nt">&lt;OOBE&gt;</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">                </span><span class="nt">&lt;HideEULAPage&gt;</span>true<span class="nt">&lt;/HideEULAPage&gt;</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">                </span><span class="nt">&lt;HideOEMRegistrationScreen&gt;</span>true<span class="nt">&lt;/HideOEMRegistrationScreen&gt;</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">                </span><span class="nt">&lt;HideOnlineAccountScreens&gt;</span>true<span class="nt">&lt;/HideOnlineAccountScreens&gt;</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">                </span><span class="nt">&lt;HideLocalAccountScreen&gt;</span>true<span class="nt">&lt;/HideLocalAccountScreen&gt;</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">                </span><span class="nt">&lt;HideWirelessSetup&gt;</span>true<span class="nt">&lt;/HideWirelessSetup&gt;</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">                </span><span class="nt">&lt;ProtectYourPC&gt;</span>3<span class="nt">&lt;/ProtectYourPC&gt;</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">            </span><span class="nt">&lt;/OOBE&gt;</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">            </span><span class="nt">&lt;UserAccounts&gt;</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">                </span><span class="nt">&lt;LocalAccounts&gt;</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">                    </span><span class="nt">&lt;LocalAccount</span><span class="w"> </span><span class="na">wcm:action=</span><span class="s">&quot;add&quot;</span><span class="nt">&gt;</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">                        </span><span class="nt">&lt;Name&gt;</span>Admin<span class="nt">&lt;/Name&gt;</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">                        </span><span class="nt">&lt;Group&gt;</span>Administrators<span class="nt">&lt;/Group&gt;</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">                        </span><span class="nt">&lt;Password&gt;</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">                            </span><span class="nt">&lt;Value&gt;&lt;/Value&gt;</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">                            </span><span class="nt">&lt;PlainText&gt;</span>true<span class="nt">&lt;/PlainText&gt;</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">                        </span><span class="nt">&lt;/Password&gt;</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">                    </span><span class="nt">&lt;/LocalAccount&gt;</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">                </span><span class="nt">&lt;/LocalAccounts&gt;</span>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">            </span><span class="nt">&lt;/UserAccounts&gt;</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">        </span><span class="nt">&lt;/component&gt;</span>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="nt">&lt;/settings&gt;</span>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="nt">&lt;/unattend&gt;</span>
-</span></code></pre></div>
+<h3 data-search-exclude="data-search-exclude" id="_2">Основная информация<a class="headerlink" href="#_2" title="Ссылка на этот раздел">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Категория</strong></td>
+<td>Утилиты / Антицензура</td>
+</tr>
+<tr>
+<td><strong>Лицензия</strong></td>
+<td>Open Source</td>
+</tr>
+<tr>
+<td><strong>Официальный сайт</strong></td>
+<td><a href="https://byebyedpi.com/">byebyedpi.com</a></td>
+</tr>
+<tr>
+<td><strong>Размер</strong></td>
+<td>~5-10 МБ</td>
+</tr>
+<tr>
+<td><strong>Платформа</strong></td>
+<td>Android 5.0+</td>
+</tr>
+<tr>
+<td><strong>Требования</strong></td>
+<td>Разрешение на VPN</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 data-search-exclude="data-search-exclude" id="_3">Скачать<a class="headerlink" href="#_3" title="Ссылка на этот раздел">#</a></h3>
+<p><a class="md-button md-button--primary" href="https://github.com/romanvht/ByeByeDPI/releases/latest"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"/><path d="M7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06z"/></svg></span> Скачать с официального GitHub</a></p>
+<details class="info">
+<summary>Другие версии / Альтернативы</summary>
+<ul>
+<li><a href="https://github.com/dovecoteescapee/ByeDPIAndroid/releases"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"/><path d="M7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06z"/></svg></span> Альтернативный репозиторий</a></li>
+<li><a href="https://apt.izzysoft.de/fdroid/index/apk/io.github.dovecoteescapee.byedpi"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"/><path d="M7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06z"/></svg></span> F-Droid версия</a></li>
+<li>Альтернатива: <a href="https://github.com/ValdikSS/GoodbyeDPI"><strong>GoodbyeDPI</strong></a> — базовый инструмент для ПК.</li>
+</ul>
 </details>
 
 
@@ -1505,35 +1465,28 @@
       
       
       
-        <span class="md-tag">винда</span>
+        <span class="md-tag">утилиты</span>
       
     
       
       
       
       
-        <span class="md-tag">оптимизация</span>
+        <span class="md-tag">антицензура</span>
       
     
       
       
       
       
-        <span class="md-tag">установка</span>
+        <span class="md-tag">android</span>
       
     
       
       
       
       
-        <span class="md-tag">autounattend</span>
-      
-    
-      
-      
-      
-      
-        <span class="md-tag">гайд</span>
+        <span class="md-tag">софт</span>
       
     
   </nav>
@@ -1555,20 +1508,20 @@
 
   <h2 id="__comments">Комментарии</h2>
   <script src="https://giscus.app/client.js"
-        data-repo="rivzor/my-wiki"
-        data-repo-id="R_kgDOQTve8w"
-        data-category-id="DIC_kwDOQTve884CxwjY"
+        data-repo="rivzor/ri-wiki"
+        data-repo-id="R_kgDOQW2-IQ"
+        data-category="General"
+        data-category-id="DIC_kwDOQW2-Ic4Cx2xB"
         data-mapping="pathname"
         data-strict="0"
         data-reactions-enabled="1"
-        data-emit-metadata="1"
-        data-input-position="top"
+        data-emit-metadata="0"
+        data-input-position="bottom"
         data-theme="preferred_color_scheme"
         data-lang="ru"
-        data-loading="lazy"
         crossorigin="anonymous"
         async>
-    </script>
+</script>
 
   <!-- Synchronize Giscus theme with palette -->
   <script>
@@ -1631,7 +1584,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Нижний колонтитул" >
         
           
-          <a href="optimization.html" class="md-footer__link md-footer__link--prev" aria-label="Назад: Базовая оптимизация">
+          <a href="../../pc/potplayer/" class="md-footer__link md-footer__link--prev" aria-label="Назад: PotPlayer">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -1641,20 +1594,20 @@
                 Назад
               </span>
               <div class="md-ellipsis">
-                Базовая оптимизация
+                PotPlayer
               </div>
             </div>
           </a>
         
         
           
-          <a href="../software/pc/rufus.html" class="md-footer__link md-footer__link--next" aria-label="Вперед: Rufus">
+          <a href="../../../other/adblock/" class="md-footer__link md-footer__link--next" aria-label="Вперед: Гайд по блокировке рекламы в браузерах">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Вперед
               </span>
               <div class="md-ellipsis">
-                Rufus
+                Гайд по блокировке рекламы в браузерах
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1746,6 +1699,21 @@
     
     
       
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="github" checked>
+      <span class="task-list-indicator"></span>
+      GitHub
+    </label>
+  </li>
+
+      
     
     
   </ul>
@@ -1774,12 +1742,12 @@
       
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant.prefetch","navigation.instant","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","search.highlight","toc.follow"],"search":"../../assets/javascripts/workers/search.5e1f2129.min.js","tags":null,"translations":{"clipboard.copied":"Скопировано в буфер","clipboard.copy":"Копировать в буфер","search.result.more.one":"Ещё 1 на этой странице","search.result.more.other":"Ещё # на этой странице","search.result.none":"Совпадений не найдено","search.result.one":"Найдено 1 совпадение","search.result.other":"Найдено совпадений: #","search.result.placeholder":"Начните печатать для поиска","search.result.term.missing":"Отсутствует","select.version":"Выберите версию"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../../..","features":["content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant.prefetch","navigation.instant","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","search.highlight","toc.follow"],"search":"../../../../assets/javascripts/workers/search.5e1f2129.min.js","tags":null,"translations":{"clipboard.copied":"Скопировано в буфер","clipboard.copy":"Копировать в буфер","search.result.more.one":"Ещё 1 на этой странице","search.result.more.other":"Ещё # на этой странице","search.result.none":"Совпадений не найдено","search.result.one":"Найдено 1 совпадение","search.result.other":"Найдено совпадений: #","search.result.placeholder":"Начните печатать для поиска","search.result.term.missing":"Отсутствует","select.version":"Выберите версию"},"version":null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.21aa498e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.21aa498e.min.js"></script>
       
-        <script src="../../assets/javascript/extra.js"></script>
+        <script src="../../../../assets/javascript/extra.js"></script>
       
     
   </body>

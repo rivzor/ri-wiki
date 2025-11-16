@@ -8,6 +8,10 @@ copyright = "Copyright &copy; 2025 rivzor"
 docs_dir = "docs"
 site_dir = "site"
 
+repo_url = "https://github.com/rivzor/ri-wiki"
+repo_name = "rivzor/ri-wiki"
+edit_uri = "edit/main/docs/"
+
 nav = [
     { "Главная" = "index.md" },
     { "Руководства" = [
@@ -50,7 +54,6 @@ language = "ru"
 
 
 features = [
-    "announce.dismiss",
     "content.code.annotate",
     "content.code.copy",
     "content.code.select",
@@ -151,19 +154,35 @@ pygments_lang_class = true
 object = "pymdownx.slugs.slugify"
 kwds = { case = "lower" }   
 
-[project.markdown_extensions.abbr]
-[project.markdown_extensions.admonition]
 [project.markdown_extensions.attr_list]
-[project.markdown_extensions.def_list]
-[project.markdown_extensions.footnotes]
-[project.markdown_extensions.md_in_html]
-[project.markdown_extensions.pymdownx.blocks.caption]
-[project.markdown_extensions.pymdownx.details]
+
 [project.markdown_extensions.pymdownx.emoji]
+emoji_index = "zensical.extensions.emoji.twemoji" 
+emoji_generator = "zensical.extensions.emoji.to_svg"
+
+[project.markdown_extensions.abbr]
+
+[project.markdown_extensions.admonition]
+
+[project.markdown_extensions.def_list]
+
+[project.markdown_extensions.footnotes]
+
+[project.markdown_extensions.md_in_html]
+
+[project.markdown_extensions.pymdownx.blocks.caption]
+
+[project.markdown_extensions.pymdownx.details]
+
 [project.markdown_extensions.pymdownx.keys]
+
 [project.markdown_extensions.pymdownx.superfences]
+
 [project.markdown_extensions.pymdownx.caret]
+
 [project.markdown_extensions.pymdownx.mark]
+
 [project.markdown_extensions.pymdownx.tilde]
+
 
 

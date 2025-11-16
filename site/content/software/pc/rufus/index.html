@@ -6,46 +6,46 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Легко активируем продукты майкрософт">
+        <meta name="description" content="База знаний о всём, что связанно с ПК">
       
       
         <meta name="author" content="rivzor">
       
       
-        <link rel="canonical" href="https://rivzor.github.io/ri-wiki/content/windows/activation.html">
+        <link rel="canonical" href="https://rivzor.github.io/ri-wiki/content/software/pc/rufus/">
       
       
-        <link rel="prev" href="install.html">
+        <link rel="prev" href="../../../windows/autounattend/">
       
       
-        <link rel="next" href="optimization.html">
+        <link rel="next" href="../peazip/">
       
       
         
-          <link rel="alternate" href="../.." hreflang="ru">
+          <link rel="alternate" href="../../../.." hreflang="ru">
         
           <link rel="alternate" href="/ri-wiki/en/" hreflang="en">
         
       
       
-      <link rel="icon" href="../../assets/logo.png">
+      <link rel="icon" href="../../../../assets/logo.png">
       <meta name="generator" content="zensical-0.0.8">
     
     
       
-        <title>Активация - Ri-Wiki</title>
+        <title>Rufus - Ri-Wiki</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.2644c6b7.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/modern/main.2644c6b7.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/modern/palette.dfe2e883.min.css">
       
       
   
@@ -93,9 +93,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
@@ -120,7 +120,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#windowsoffice" class="md-skip">
+        <a href="#rufus" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -134,9 +134,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
-    <a href="../../index.html" title="Ri-Wiki" class="md-header__button md-logo" aria-label="Ri-Wiki" data-md-component="logo">
+    <a href="../../../.." title="Ri-Wiki" class="md-header__button md-logo" aria-label="Ri-Wiki" data-md-component="logo">
       
-  <img src="../../assets/logo.png" alt="logo">
+  <img src="../../../../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -153,7 +153,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Активация
+              Rufus
             
           </span>
         </div>
@@ -200,7 +200,7 @@
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="../.." hreflang="ru" class="md-select__link">
+            <a href="../../../.." hreflang="ru" class="md-select__link">
               Русский
             </a>
           </li>
@@ -232,6 +232,16 @@
     
     <div class="md-header__source">
       
+        <a href="https://github.com/rivzor/ri-wiki" title="Перейти к репозиторию" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    rivzor/ri-wiki
+  </div>
+</a>
+      
     </div>
   </nav>
   
@@ -253,7 +263,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../index.html" class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   Главная
@@ -282,7 +292,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="download.html" class="md-tabs__link">
+        <a href="../../../windows/download/" class="md-tabs__link">
           
   
   Руководства
@@ -304,7 +314,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../other/adblock.html" class="md-tabs__link">
+        <a href="../../../other/adblock/" class="md-tabs__link">
           
   
   Разное
@@ -337,13 +347,25 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навигация" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="Ri-Wiki" class="md-nav__button md-logo" aria-label="Ri-Wiki" data-md-component="logo">
+    <a href="../../../.." title="Ri-Wiki" class="md-nav__button md-logo" aria-label="Ri-Wiki" data-md-component="logo">
       
-  <img src="../../assets/logo.png" alt="logo">
+  <img src="../../../../assets/logo.png" alt="logo">
 
     </a>
     Ri-Wiki
   </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/rivzor/ri-wiki" title="Перейти к репозиторию" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    rivzor/ri-wiki
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -354,11 +376,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../index.html" class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-home" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-library-big" viewBox="0 0 24 24"><rect width="8" height="18" x="3" y="3" rx="1"/><path d="M7 3v18M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z"/></svg>
   
   <span class="md-ellipsis">
     
@@ -445,8 +467,6 @@
                 
   
   
-    
-  
   
   
     
@@ -472,11 +492,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
         
           
           <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
@@ -497,7 +517,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -515,7 +535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="download.html" class="md-nav__link">
+      <a href="../../../windows/download/" class="md-nav__link">
         
   
   
@@ -531,14 +551,6 @@
   </span>
   
   
-    
-  
-  
-    <span class="md-status md-status--hot" title="Горячее">
-    </span>
-  
-
-  
 
       </a>
     </li>
@@ -553,7 +565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="install.html" class="md-nav__link">
+      <a href="../../../windows/install/" class="md-nav__link">
         
   
   
@@ -580,47 +592,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-flame" viewBox="0 0 24 24"><path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"/></svg>
-  
-  <span class="md-ellipsis">
-    
-  
-    Активация
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--new" title="Новое">
-    </span>
-  
-
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="activation.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../windows/activation/" class="md-nav__link">
         
   
   
@@ -646,51 +621,6 @@
   
 
       </a>
-      
-        
-
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="На этой странице">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      На этой странице
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Запуск скрипта
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Методы активации
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -761,7 +691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="optimization.html" class="md-nav__link">
+      <a href="../../../windows/optimization/" class="md-nav__link">
         
   
   
@@ -799,7 +729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="autounattend.html" class="md-nav__link">
+      <a href="../../../windows/autounattend/" class="md-nav__link">
         
   
   
@@ -842,6 +772,8 @@
                 
   
   
+    
+  
   
   
     
@@ -867,11 +799,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
@@ -892,7 +824,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -907,10 +839,39 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../software/pc/rufus.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-usb" viewBox="0 0 24 24"><circle cx="10" cy="7" r="1"/><circle cx="4" cy="20" r="1"/><path d="M4.7 19.3 19 5M21 3l-3 1 2 2ZM9.26 7.68 5 12l2 5M10 14l5 2 3.5-3.5"/><path d="m18 12 1-1 1 1-1 1Z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Rufus
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -928,6 +889,62 @@
   
 
       </a>
+      
+        
+
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="На этой странице">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      На этой странице
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Возможности
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Основная информация
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Скачать
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -940,7 +957,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/pc/peazip.html" class="md-nav__link">
+      <a href="../peazip/" class="md-nav__link">
         
   
   
@@ -970,7 +987,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/pc/wiztree.html" class="md-nav__link">
+      <a href="../wiztree/" class="md-nav__link">
         
   
   
@@ -1000,7 +1017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/pc/potplayer.html" class="md-nav__link">
+      <a href="../potplayer/" class="md-nav__link">
         
   
   
@@ -1097,7 +1114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/android/byebyedpi.html" class="md-nav__link">
+      <a href="../../android/byebyedpi/" class="md-nav__link">
         
   
   
@@ -1198,7 +1215,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../other/adblock.html" class="md-nav__link">
+      <a href="../../../other/adblock/" class="md-nav__link">
         
   
   
@@ -1261,7 +1278,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Запуск скрипта
+        Возможности
       
     </span>
   </a>
@@ -1272,7 +1289,18 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Методы активации
+        Основная информация
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Скачать
       
     </span>
   </a>
@@ -1304,7 +1332,7 @@
   
   
     <li class="md-path__item">
-      <a href="../../index.html" class="md-path__link">
+      <a href="../../../.." class="md-path__link">
         
   <span class="md-ellipsis">
     Главная
@@ -1327,7 +1355,7 @@
     
     
       <li class="md-path__item">
-        <a href="download.html" class="md-path__link">
+        <a href="../../../windows/download/" class="md-path__link">
           
   <span class="md-ellipsis">
     Руководства
@@ -1348,10 +1376,10 @@
     
     
       <li class="md-path__item">
-        <a href="download.html" class="md-path__link">
+        <a href="./" class="md-path__link">
           
   <span class="md-ellipsis">
-    Windows
+    Программы на ПК
   </span>
 
         </a>
@@ -1367,93 +1395,69 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
+  
 
-<h1 id="windowsoffice">Активация Windows/Office<a class="headerlink" href="#windowsoffice" title="Ссылка на этот раздел">#</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Внимание</p>
-<p>Руководство по активации Windows приведено <strong>только для ознакомления</strong> и не является призывом к действию</p>
-</div>
-<p>Пошаговая инструкция по активации Windows и Office с использованием <strong>Microsoft Activation Scripts (MAS)</strong>. Скрипты позволяют активировать систему и офисные продукты разными методами: HWID, Ohook, TSforge и Online KMS.</p>
-<hr />
-<h2 data-search-exclude="data-search-exclude" id="_1">Запуск скрипта<a class="headerlink" href="#_1" title="Ссылка на этот раздел">#</a></h2>
-<ol>
-<li>Откройте <code>PowerShell</code> (Пуск → <code>PowerShell</code>).</li>
-<li>
-<p>Вставьте команду:</p>
+
+<h1 id="rufus">Rufus<a class="headerlink" href="#rufus" title="Ссылка на этот раздел">#</a></h1>
+<p><img align="left" alt="Rufus" loading="lazy" src="https://img.utdstc.com/icon/dfb/617/dfb617fea19c1ab8515ad34dfdc3dc352a975899b3ee5bfb7c1e77c1ebd79237:100" width="70" />
+Rufus - это бесплатная утилита для создания загрузочных USB-носителей из ISO-образов Windows, Linux и других операционных систем.</p>
+<h3 data-search-exclude="data-search-exclude" id="_1">Возможности<a class="headerlink" href="#_1" title="Ссылка на этот раздел">#</a></h3>
 <ul>
-<li>Win 11/10/8
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">irm </span><span class="n">https</span><span class="p">://</span><span class="n">get</span><span class="p">.</span><span class="n">activated</span><span class="p">.</span><span class="n">win</span> <span class="p">|</span> <span class="nb">iex</span>
-</span></code></pre></div></li>
-<li>Win 7
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">iex </span><span class="p">((</span><span class="nb">New-Object</span> <span class="n">Net</span><span class="p">.</span><span class="n">WebClient</span><span class="p">).</span><span class="n">DownloadString</span><span class="p">(</span><span class="s1">&#39;https://get.activated.win&#39;</span><span class="p">))</span>
-</span></code></pre></div></li>
+<li>Создание загрузочных флешек Windows, Linux и др.  </li>
+<li>Поддержка <strong>UEFI и BIOS</strong>  </li>
+<li>Работа в portable-режиме  </li>
+<li>Проверка подлинности ISO  </li>
+<li>Настройка <strong>MBR/GPT</strong> и <strong>FAT32/NTFS</strong>  </li>
+<li>Запись образов на внешние HDD и SD-карты  </li>
 </ul>
-<details class="info">
-<summary>Если команда блокируется провайдером/DNS</summary>
-<p>Win 11/10:
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">iex </span><span class="p">(</span><span class="n">curl</span><span class="p">.</span><span class="n">exe</span> <span class="n">-s</span> <span class="p">-</span><span class="n">-doh-url</span> <span class="n">https</span><span class="p">://</span><span class="n">1</span><span class="p">.</span><span class="n">1</span><span class="p">.</span><span class="n">1</span><span class="p">.</span><span class="n">1</span><span class="p">/</span><span class="n">dns-query</span> <span class="n">https</span><span class="p">://</span><span class="n">get</span><span class="p">.</span><span class="n">activated</span><span class="p">.</span><span class="n">win</span> <span class="p">|</span> <span class="nb">Out-String</span><span class="p">)</span>
-</span></code></pre></div></p>
-<p>Win 7
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">iex </span><span class="p">((</span><span class="nb">New-Object</span> <span class="n">Net</span><span class="p">.</span><span class="n">WebClient</span><span class="p">).</span><span class="n">DownloadString</span><span class="p">(</span><span class="s1">&#39;https://get.activated.win&#39;</span><span class="p">))</span>
-</span></code></pre></div></p>
-</details>
-</li>
-<li>
-<p>Появится меню активации. Выберите зелёные пункты для активации Windows или Office.</p>
-</li>
-<li>Готово!</li>
-</ol>
-<details class="tip">
-<summary>Если скрипт все равно не запускается</summary>
-<ol>
-<li>Скачать файл: <strong><a href="https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?path=/MAS/All-In-One-Version-KL/MAS_AIO.cmd&amp;download=true">MAS_AIO.cmd</a></strong></li>
-<li>Запустить <code>MAS_AIO.cmd</code></li>
-</ol>
-</details>
-<figure>
-  <img alt="MAS" src="data:image/png;base64,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" width="600" />
-<br />
-<figcaption>Microsoft Activation Scripts (MAS)</figcaption>
-</figure>
 <hr />
-<h2 data-search-exclude="data-search-exclude" id="_2">Методы активации<a class="headerlink" href="#_2" title="Ссылка на этот раздел">#</a></h2>
+<h3 data-search-exclude="data-search-exclude" id="_2">Основная информация<a class="headerlink" href="#_2" title="Ссылка на этот раздел">#</a></h3>
 <table>
 <thead>
 <tr>
-<th>Метод</th>
-<th>Продукты</th>
-<th>Срок активации</th>
-<th>Интернет</th>
+<th>Параметр</th>
+<th>Значение</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>HWID</strong></td>
-<td>Windows 10–11</td>
-<td>Постоянно</td>
-<td>Да</td>
+<td><strong>Категория</strong></td>
+<td>Утилиты / Установка ОС</td>
 </tr>
 <tr>
-<td><strong>Ohook</strong></td>
-<td>Office</td>
-<td>Постоянно</td>
-<td>Нет</td>
+<td><strong>Лицензия</strong></td>
+<td>Бесплатная (Open Source)</td>
 </tr>
 <tr>
-<td><strong>TSforge</strong></td>
-<td>Windows / ESU / Office</td>
-<td>Постоянно</td>
-<td>Да (на новых сборках)</td>
+<td><strong>Официальный сайт</strong></td>
+<td><a href="https://rufus.ie/">https://rufus.ie/</a></td>
 </tr>
 <tr>
-<td><strong>Online KMS</strong></td>
-<td>Windows / Office</td>
-<td>180 дней (с автообновлением)</td>
-<td>Да</td>
+<td><strong>Размер</strong></td>
+<td>~1.5 МБ</td>
+</tr>
+<tr>
+<td><strong>Платформа</strong></td>
+<td>Windows 10 / 11 (x64/x86)</td>
+</tr>
+<tr>
+<td><strong>Поддерживаемые форматы</strong></td>
+<td>ISO, DD, IMG</td>
 </tr>
 </tbody>
 </table>
 <hr />
+<h3 data-search-exclude="data-search-exclude" id="_3">Скачать<a class="headerlink" href="#_3" title="Ссылка на этот раздел">#</a></h3>
+<p><a class="md-button md-button--primary" href="https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11.exe"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"/><path d="M7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06z"/></svg></span> Скачать Rufus 4.11</a></p>
+<details class="info" open="open">
+<summary>Другие версии</summary>
+<ul>
+<li><a href="https://github.com/pbatard/rufus/releases/download/v4.10/rufus-4.10.exe"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"/><path d="M7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06z"/></svg></span> Rufus 4.10</a></li>
+<li><a href="https://github.com/pbatard/rufus/releases/download/v4.0/rufus-4.0.exe"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"/><path d="M7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06z"/></svg></span> Rufus 4.0</a></li>
+<li><a href="https://github.com/pbatard/rufus/releases/download/v3.22/rufus-3.22.exe"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"/><path d="M7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06z"/></svg></span> Rufus 3.22</a></li>
+</ul>
+</details>
 
 
   <nav class="md-tags" >
@@ -1462,14 +1466,35 @@
       
       
       
-        <span class="md-tag">винда</span>
+        <span class="md-tag">утилиты</span>
       
     
       
       
       
       
-        <span class="md-tag">офис</span>
+        <span class="md-tag">windows</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">софт</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">флешка</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">iso</span>
       
     
   </nav>
@@ -1491,20 +1516,20 @@
 
   <h2 id="__comments">Комментарии</h2>
   <script src="https://giscus.app/client.js"
-        data-repo="rivzor/my-wiki"
-        data-repo-id="R_kgDOQTve8w"
-        data-category-id="DIC_kwDOQTve884CxwjY"
+        data-repo="rivzor/ri-wiki"
+        data-repo-id="R_kgDOQW2-IQ"
+        data-category="General"
+        data-category-id="DIC_kwDOQW2-Ic4Cx2xB"
         data-mapping="pathname"
         data-strict="0"
         data-reactions-enabled="1"
-        data-emit-metadata="1"
-        data-input-position="top"
+        data-emit-metadata="0"
+        data-input-position="bottom"
         data-theme="preferred_color_scheme"
         data-lang="ru"
-        data-loading="lazy"
         crossorigin="anonymous"
         async>
-    </script>
+</script>
 
   <!-- Synchronize Giscus theme with palette -->
   <script>
@@ -1567,7 +1592,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Нижний колонтитул" >
         
           
-          <a href="install.html" class="md-footer__link md-footer__link--prev" aria-label="Назад: Установка Windows">
+          <a href="../../../windows/autounattend/" class="md-footer__link md-footer__link--prev" aria-label="Назад: Файл автоответов">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -1577,20 +1602,20 @@
                 Назад
               </span>
               <div class="md-ellipsis">
-                Установка Windows
+                Файл автоответов
               </div>
             </div>
           </a>
         
         
           
-          <a href="optimization.html" class="md-footer__link md-footer__link--next" aria-label="Вперед: Базовая оптимизация">
+          <a href="../peazip/" class="md-footer__link md-footer__link--next" aria-label="Вперед: PeaZip">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Вперед
               </span>
               <div class="md-ellipsis">
-                Базовая оптимизация
+                PeaZip
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1682,6 +1707,21 @@
     
     
       
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="github" checked>
+      <span class="task-list-indicator"></span>
+      GitHub
+    </label>
+  </li>
+
+      
     
     
   </ul>
@@ -1710,12 +1750,12 @@
       
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant.prefetch","navigation.instant","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","search.highlight","toc.follow"],"search":"../../assets/javascripts/workers/search.5e1f2129.min.js","tags":null,"translations":{"clipboard.copied":"Скопировано в буфер","clipboard.copy":"Копировать в буфер","search.result.more.one":"Ещё 1 на этой странице","search.result.more.other":"Ещё # на этой странице","search.result.none":"Совпадений не найдено","search.result.one":"Найдено 1 совпадение","search.result.other":"Найдено совпадений: #","search.result.placeholder":"Начните печатать для поиска","search.result.term.missing":"Отсутствует","select.version":"Выберите версию"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../../..","features":["content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant.prefetch","navigation.instant","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","search.highlight","toc.follow"],"search":"../../../../assets/javascripts/workers/search.5e1f2129.min.js","tags":null,"translations":{"clipboard.copied":"Скопировано в буфер","clipboard.copy":"Копировать в буфер","search.result.more.one":"Ещё 1 на этой странице","search.result.more.other":"Ещё # на этой странице","search.result.none":"Совпадений не найдено","search.result.one":"Найдено 1 совпадение","search.result.other":"Найдено совпадений: #","search.result.placeholder":"Начните печатать для поиска","search.result.term.missing":"Отсутствует","select.version":"Выберите версию"},"version":null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.21aa498e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.21aa498e.min.js"></script>
       
-        <script src="../../assets/javascript/extra.js"></script>
+        <script src="../../../../assets/javascript/extra.js"></script>
       
     
   </body>

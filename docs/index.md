@@ -1,60 +1,51 @@
 ---
-title: Главная страница
-description: RiWiki — это личная база знаний **о софте, системных гайдах и инструментах оптимизации Windows, браузеров и безопасности**. Здесь собраны инструкции, подборки программ и проверенные методы настройки, без воды и рекламы. 
+title: Главная страница   
+description: Компактная база знаний по Windows, программам и полезным гайдам.
 date: 2025-11-13
-authors: rivzor
+author: rivzor
+icon: lucide/library-big
+comments: false
 hide:
     - navigation
-    - footer
-icon: lucide/home
+    - toc
 ---
 
-# Добро пожаловать в **RiWiki**
+# База знаний на любой случай { data-search-exclude }
 
-RiWiki — это личная база знаний **о софте, системных гайдах и инструментах оптимизации Windows, браузеров и безопасности**.  
-Здесь собраны инструкции, подборки программ и проверенные методы настройки, без воды и рекламы.  
+**Ri-Wiki** - это личная база знаний **о софте, системных гайдах и инструментах оптимизации Windows, браузеров и безопасности**.  
+Здесь собраны инструкции, подборки программ и проверенные методы настройки, без воды и рекламы. 
 
----
-## Основные разделы
+## Основные разделы { data-search-exclude }
 
-<div class="grid cards" markdown>
+<div class="grid cards" markdown>   
 
--   :material-microsoft-windows:{ .lg .middle } __Всё о Windows__
-
-    ---
-
-    Оптимизация Windows, настройка автозагрузки, чистка, ускорение.
-
-    [:octicons-arrow-right-24: Открыть](guides/windows/install.md)
-
--   :octicons-apps-16:{ .lg .middle } __Программы__
+-   :lucide-computer:{ .lg .middle } __Всё о Windows__
 
     ---
 
-    Полезный софт, системные утилиты, установка и настройка.
+    Оптимизация Windows, настройка 
+    автозагрузки, чистка, ускорение.
 
-    [:octicons-arrow-right-24: Посмотреть](guides/software/pc/rufus.md)
+    [:octicons-arrow-right-24: Перейти](content/windows/download.md)
 
--   :material-scale-balance:{ .lg .middle } __Гайды__
+-   :lucide-folder-code:{ .lg .middle } __Программы__
 
     ---
 
-    Инструкции, лайфхаки и статьи обо всём, что упрощает жизнь.
+    Полезный софт, системные утилиты, 
+    установка и настройка.
 
-    [:material-brain: Изучить](guides/hacks/adblock.md)
+    [:octicons-arrow-right-24: Перейти](#)
+
+-   :lucide-notebook-pen:{ .lg .middle } __Гайды__
+
+    ---
+
+    Инструкции, лайфхаки и статьи обо всём, 
+    что упрощает жизнь.
+
+    [:octicons-arrow-right-24: Перейти](#)
 
 </div>
 
----
 
-## Быстрый доступ
-
-> _Полезные статьи, которые всегда нужны под рукой_
-
-- [**Установка Windows**](guides/windows/install.md) — гайд по установке винды с помощью Rufus
-- [**Оптимизация Windows 11**](guides/windows/optimization.md) — отключение мусора и трекеров
-- [**Правильный AdBlock в браузерах**](guides/hacks/adblock.md) — настройка расширений против всей рекламы в браузере
-
----
-
-> _RiWiki обновляется по мере накопления новых знаний. Всё проверено, всё работает._

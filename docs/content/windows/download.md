@@ -9,7 +9,6 @@ tags:
     - винда
     - офис
     - iso
-status: hot
 ---
 
 # Скачать образ Windows  { data-search-exclude }
@@ -172,3 +171,9 @@ status: hot
         [:lucide-hard-drive-download: Скачать торрент](https://archive.org/download/microsoft_office_2019_ru/ProPlus2019Retail.img){ .md-button }
 
     
+<!-- Донат-блок: статичный, без hover/анимаций -->
+<div class="donate-block">
+  <span class="donate-text">Поддержи Ri-Wiki 🌱</span>
+  <a href="https://your-donate-link" class="donate-link">Донат →</a>
+</div>
+
