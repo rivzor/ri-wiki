@@ -1,4 +1,4 @@
-name: Documentation
+name: ri-wiki
 on:
   push:
     branches:
