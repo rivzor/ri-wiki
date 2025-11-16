@@ -1,0 +1,40 @@
+:root {
+    --wp-neutral: oklch(50% 0 0); /* Нейтральный серый */
+    --wp-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --wp-radius: clamp(0.1rem, .3vw, .3rem); /* Адаптивные закругления */
+}
+
+[data-md-color-scheme="default"] {
+    --md-default-fg-color--light: #6a737d;
+    --md-default-bg-color--lighter: #f6f8fa;
+    --md-divider-color: color-mix(in oklch, var(--wp-neutral) 10%, white);
+}
+
+[data-md-color-scheme="slate"] {
+    --md-default-fg-color--light: #8b949e;
+    --md-default-fg-color--lighter: #6e7681;
+    --md-divider-color: color-mix(in oklch, var(--wp-neutral) 10%, #181a1b);
+}
+
+/* extra.css: Лаконичные бейджи в стиле admonitions — неброские, с иконками */
+.md-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55em;
+    padding: 0.55em 0.8em;
+    margin: 0.15em 0.25em 0.15em 0;
+    border-radius: var(--wp-radius);
+    font-size: 0.78em;
+    font-weight: 600;
+    line-height: 1;
+    transition: var(--wp-transition);
+    color: var(--md-default-fg-color--light);
+    background: var(--md-default-bg-color--lighter);
+    border: 1px solid var(--md-divider-color);
+}
+
+.md-typeset .md-button {
+    margin-right: .2em;
+    border-radius: clamp(0.3rem, .6vw, .6rem);;
+}
+
