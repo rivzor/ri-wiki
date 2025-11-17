@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Documentation
 on:
   push:
     branches:
@@ -12,7 +12,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: https://rivzor.github.io/ri-wiki/
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/configure-pages@v5
