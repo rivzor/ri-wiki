@@ -67,6 +67,7 @@ hide:
 
 > Есть пожелания или нашли ошибку? Пишите в комментариях под любым гайдом — отвечаю всем!
 
+
 <div>
   <a href="https://yoomoney.ru/to/4100115791948942" class="donate-block">
     <span class="donate-text">
