@@ -18,18 +18,6 @@ tags:
 
 ---
 
-### Редакции Windows 10/11: Краткий обзор  { data-search-exclude }
-
-Выберите редакцию по своим нуждам. Вот факты о ключевых версиях:
-
-!!! note "Информация"
-    - **Pro**: Для дома и малого бизнеса. Включает шифрование (BitLocker), удаленный доступ (Remote Desktop) и виртуализацию (Hyper-V). Обновления каждые 18-24 месяца.
-    - **Pro for Workstations**: Для мощных ПК (много RAM/процессоров). Поддерживает до 6 ТБ памяти, файловую систему ReFS и быструю передачу данных (SMB Direct). Обновления как в Pro.
-    - **IoT Enterprise LTSC**: Для устройств вроде киосков или гаджетов. Минимальный набор функций, без Магазина и Cortana. Поддержка 10 лет без частых изменений.
-    - **Enterprise LTSC**: Для стабильных систем (серверы, медицинское оборудование). Удалены лишние приложения (Edge, Store). Поддержка 10 лет без новых фич.
-
----
-
 ### Скачать Windows
     
 === "Windows 11"
@@ -136,44 +124,180 @@ tags:
         <span class="md-badge md-badge--warning">:material-information-slab-circle-outline: Формат: ISO</span> 
         <span class="md-badge md-badge--info">:octicons-key-asterisk-16: Разрядность: х64</span>
 
+
+#### Редакции Windows 10/11: Краткий обзор  { data-search-exclude }
+
+Выберите редакцию по своим нуждам. Вот факты о ключевых версиях:
+
+??? info "Информация"
+    - **Pro**: Для дома и малого бизнеса. Включает шифрование (BitLocker), удаленный доступ (Remote Desktop) и виртуализацию (Hyper-V). Обновления каждые 18-24 месяца.
+    - **Pro for Workstations**: Для мощных ПК (много RAM/процессоров). Поддерживает до 6 ТБ памяти, файловую систему ReFS и быструю передачу данных (SMB Direct). Обновления как в Pro.
+    - **IoT Enterprise LTSC**: Для устройств вроде киосков или гаджетов. Минимальный набор функций, без Магазина и Cortana. Поддержка 10 лет без частых изменений.
+    - **Enterprise LTSC**: Для стабильных систем (серверы, медицинское оборудование). Удалены лишние приложения (Edge, Store). Поддержка 10 лет без новых фич.
+
 ---
 
 ### Скачать Office
 
-!!! example "Скачать Office"
+=== "Office 2024"
+
+    === "Professional Plus 2024"
+
+        Скачать **Microsoft Office 2024 Professional Plus**  
+        Word, Excel, PowerPoint, OneNote, Outlook, Publisher, Access
+
+        [:lucide-download: С сайта Microsoft](https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ru-RU/ProPlus2024Retail.img){ .md-button .md-button--primary }
+
+        <span class="md-badge md-badge--info">:octicons-file-zip-16: Формат: IMG</span>
+        <span class="md-badge md-badge--info">:lucide-scaling: Размер: ~4.7 ГБ</span>
+
+    === "Home & Business 2024"
+
+        Скачать **Office 2024 Home & Business**  
+        Word, Excel, PowerPoint, OneNote, Outlook
+
+        [:lucide-download: С сайта Microsoft](https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ru-RU/HomeBusiness2024Retail.img){ .md-button .md-button--primary }
+
+        <span class="md-badge md-badge--info">:octicons-file-zip-16: Формат: IMG</span>
+        <span class="md-badge md-badge--info">:lucide-scaling: Размер: ~3.8 ГБ</span>
+
+    === "Home 2024"
+
+        Скачать **Office 2024 Home**  
+        Word, Excel, PowerPoint, OneNote
+
+        [:lucide-download: С сайта Microsoft](https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ru-RU/Home2024Retail.img){ .md-button .md-button--primary }
+
+        <span class="md-badge md-badge--info">:octicons-file-zip-16: Формат: IMG</span>
+        <span class="md-badge md-badge--info">:lucide-scaling: Размер: ~3.5 ГБ</span>
+
+
+=== "Office 2021"
+
+    === "Professional Plus 2021"
+
+        Скачать **Office 2021 Professional Plus**  
+        Word, Excel, PowerPoint, OneNote, Outlook, Publisher, Access
+
+        [:lucide-download: С сайта Microsoft](https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/ru-RU/ProPlus2021Retail.img){ .md-button .md-button--primary }
+
+        <span class="md-badge md-badge--info">:octicons-file-zip-16: Формат: IMG</span>
+        <span class="md-badge md-badge--info">:lucide-scaling: Размер: ~4.7 ГБ</span>
+
+    === "Home & Student 2021"
+
+        Скачать **Office 2021 Home & Student**  
+        Word, Excel, PowerPoint, OneNote
+
+        [:lucide-download: С сайта Microsoft](https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/ru-RU/HomeStudent2021Retail.img){ .md-button .md-button--primary }
+
+        <span class="md-badge md-badge--info">:octicons-file-zip-16: Формат: IMG</span>
+        <span class="md-badge md-badge--info">:lucide-scaling: Размер: ~4.3 ГБ</span>
+
+    === "Home & Business 2021"
+
+        Скачать **Office 2021 Home & Business**  
+        Word, Excel, PowerPoint, OneNote, Outlook
+
+        [:lucide-download: С сайта Microsoft](https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/ru-RU/HomeBusiness2021Retail.img){ .md-button .md-button--primary }
+
+        <span class="md-badge md-badge--info">:octicons-file-zip-16: Формат: IMG</span>
+        <span class="md-badge md-badge--info">:lucide-scaling: Размер: ~4.3 ГБ</span>
+
+
+=== "Office 2019"
+
+    === "Professional Plus 2019"
+
+        Скачать **Office 2019 Professional Plus**  
+        Word, Excel, PowerPoint, OneNote, Outlook, Publisher, Access
+
+        [:lucide-download: С сайта Microsoft](https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/ru-RU/ProPlus2019Retail.img){ .md-button .md-button--primary }
+
+        <span class="md-badge md-badge--info">:octicons-file-zip-16: Формат: IMG</span>
+        <span class="md-badge md-badge--info">:lucide-scaling: Размер: ~4.3 ГБ</span>
+
+    === "Home & Student 2019"
+
+        Скачать **Office 2019 Home & Student**  
+        Word, Excel, PowerPoint, OneNote
+
+        [:lucide-download: С сайта Microsoft](https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/ru-RU/HomeStudent2021Retail.img){ .md-button .md-button--primary }
+
+        <span class="md-badge md-badge--warning">:material-information-slab-circle-outline: Обратите внимание: используется ссылка 2021 версии, так как общая CDN-папка</span>
+        <span class="md-badge md-badge--info">:lucide-scaling: Размер: ~4.3 ГБ</span>
+
+    === "Home & Business 2019"
+
+        Скачать **Office 2019 Home & Business**  
+        Word, Excel, PowerPoint, OneNote, Outlook
+
+        [:lucide-download: С сайта Microsoft](https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/ru-RU/HomeBusiness2019Retail.img){ .md-button .md-button--primary }
+
+        <span class="md-badge md-badge--info">:octicons-file-zip-16: Формат: IMG</span>
+        <span class="md-badge md-badge--info">:lucide-scaling: Размер: ~4.3 ГБ</span>
+
+
+=== "Office 2016"
+
+    === "Professional Plus 2016"
+
+        Скачать **Office 2016 Professional Plus**  
+        Word, Excel, PowerPoint, OneNote, Outlook, Publisher, Access
+
+        [:lucide-download: С сайта Microsoft](https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/ru-RU/ProPlusRetail.img){ .md-button .md-button--primary }
+
+        <span class="md-badge md-badge--info">:octicons-file-zip-16: Формат: IMG</span>
+        <span class="md-badge md-badge--info">:lucide-scaling: Размер: ~4.3 ГБ</span>
+
+    === "Home & Student 2016"
+
+        Скачать **Office 2016 Home & Student**  
+        Word, Excel, PowerPoint, OneNote
+
+        [:lucide-download: С сайта Microsoft](https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/ru-RU/HomeStudentRetail.img){ .md-button .md-button--primary }
+
+        <span class="md-badge md-badge--info">:octicons-file-zip-16: Формат: IMG</span>
+        <span class="md-badge md-badge--info">:lucide-scaling: Размер: ~4.3 ГБ</span>
+
+    === "Home & Business 2016"
+
+        Скачать **Office 2016 Home & Business**  
+        Word, Excel, PowerPoint, OneNote, Outlook
+
+        [:lucide-download: С сайта Microsoft](https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/ru-RU/HomeBusinessRetail.img){ .md-button .md-button--primary }
+
+        <span class="md-badge md-badge--info">:octicons-file-zip-16: Формат: IMG</span>
+        <span class="md-badge md-badge--info">:lucide-scaling: Размер: ~4.3 ГБ</span>
+
+
+#### Таблица сравнения редакций
+
+??? info "Информация"
+    | Версия          | Пакеты Office                              | Формат | Прибл. размер |
+    |-----------------|---------------------------------------------|--------|----------------|
+    | **2024 Pro Plus**       | Word, Excel, PowerPoint, OneNote, Outlook, Publisher, Access | IMG    | ~ 4.7 ГБ |
+    | **2024 Home & Business**| Word, Excel, PowerPoint, OneNote, Outlook                      | IMG    | ~ 3.8 ГБ |
+    | **2024 Home**           | Word, Excel, PowerPoint, OneNote                               | IMG    | ~ 3.5 ГБ |
+    | **2021 Pro Plus**      | Word, Excel, PowerPoint, OneNote, Outlook, Publisher, Access    | IMG    | ~ 4.7 ГБ |
+    | **2021 Home & Student** | Word, Excel, PowerPoint, OneNote                              | IMG    | ~ 4.3 ГБ |
+    | **2021 Home & Business**| Word, Excel, PowerPoint, OneNote, Outlook                      | IMG    | ~ 4.3 ГБ |
+    | **2019 Pro Plus**      | Word, Excel, PowerPoint, OneNote, Outlook, Publisher, Access    | IMG    | ~ 4.3 ГБ |
+    | **2019 Home & Student** | Word, Excel, PowerPoint, OneNote                              | IMG    | ~ 4.3 ГБ (используется общий файл 2021) |
+    | **2019 Home & Business**| Word, Excel, PowerPoint, OneNote, Outlook                      | IMG    | ~ 4.3 ГБ |
+    | **2016 Pro Plus**      | Word, Excel, PowerPoint, OneNote, Outlook, Publisher, Access    | IMG    | ~ 4.3 ГБ |
+    | **2016 Home & Student** | Word, Excel, PowerPoint, OneNote                              | IMG    | ~ 4.3 ГБ |
+    | **2016 Home & Business**| Word, Excel, PowerPoint, OneNote, Outlook                      | IMG    | ~ 4.3 ГБ |
+
+---
+
+
     
-    === "2024"
-
-        *Скачать Office 2024*
-
-        [:lucide-download: С сайта Microsoft](https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ru-ru/ProPlus2024Retail.img){ .md-button }
-
-        [:material-file-arrow-up-down: Перезалив на Archive.org](https://archive.org/download/microsoft_office_2024_ru/ProPlus2024Retail.img){ .md-button }
-
-        [:lucide-hard-drive-download: Скачать торрент](https://archive.org/download/microsoft_office_2024_ru/microsoft_office_2024_ru_archive.torrent){ .md-button }
-    === "2021"
-
-        *Скачать Office 2021*
-
-        [:lucide-download: С сайта Microsoft](https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ru-ru/ProPlus2021Retail.img){ .md-button }
-
-        [:material-file-arrow-up-down: Перезалив на Archive.org](https://archive.org/download/microsoft_office_2021_ru/ProPlus2021Retail.img){ .md-button }
-
-        [:lucide-hard-drive-download: Скачать торрент](https://archive.org/download/microsoft_office_2021_ru/microsoft_office_2021_ru_archive.torrent){ .md-button }
-    === "2019"
-
-        *Скачать Office 2019*
-
-        [:lucide-download: С сайта Microsoft](https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ru-ru/ProPlus2019Retail.img){ .md-button }
-
-        [:material-file-arrow-up-down: Перезалив на Archive.org](https://archive.org/download/microsoft_office_2019_ru/ProPlus2019Retail.img){ .md-button }
-
-        [:lucide-hard-drive-download: Скачать торрент](https://archive.org/download/microsoft_office_2019_ru/ProPlus2019Retail.img){ .md-button }
-
-    
-<!-- Донат-блок: статичный, без hover/анимаций -->
-<div class="donate-block">
-  <span class="donate-text">Поддержи Ri-Wiki 🌱</span>
-  <a href="https://your-donate-link" class="donate-link">Донат →</a>
+<div>
+  <a href="https://yoomoney.ru/to/4100115791948942" class="donate-block">
+    <span class="donate-text">
+        Поддержи развитие Ri-Wiki 🌱
+    </span>
+  </a>
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: Активация
+title: Активация Windows/Office
 description: Легко активируем продукты майкрософт
 date: 2025-11-14
 author: rivzor
@@ -66,8 +66,12 @@ tags:
 | **TSforge** | Windows / ESU / Office | Постоянно   | Да (на новых сборках) |
 | **Online KMS** | Windows / Office | 180 дней (с автообновлением) | Да |
 
-<!-- Донат-блок: статичный, без hover/анимаций -->
-<div class="donate-block">
-  <span class="donate-text">Поддержи Ri-Wiki 🌱</span>
-  <a href="https://your-donate-link" class="donate-link">Донат →</a>
+
+
+<div>
+  <a href="https://yoomoney.ru/to/4100115791948942" class="donate-block">
+    <span class="donate-text">
+        Поддержи развитие Ri-Wiki 🌱
+    </span>
+  </a>
 </div>

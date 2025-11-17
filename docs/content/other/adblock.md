@@ -1,100 +1,120 @@
 ---
 title: Гайд по блокировке рекламы в браузерах
-description: Надёжная защита от рекламы, трекеров, всплывающих окон и навязчивых баннеров.
+description: Самый эффективный и актуальный набор инструментов для полной защиты от рекламы, cookie-баннеров, трекеров, майнеров и визуального мусора в Chrome, Edge, Firefox и производных браузерах.
 date: 2025-11-13
 author: rivzor
 icon: lucide/shield-check
 comments: true
 tags:
-    - реклама
+    - adblock
     - приватность
+    - ublock-origin
     - браузеры
-    - расширения
+    - трекеры
 ---
 
-# Гайд по блокировке рекламы в браузерах
+# Полная блокировка рекламы и трекеров в браузерах (актуально на 2025 год)
 
-> Надёжная защита от рекламы, трекеров, всплывающих окон и навязчивых баннеров.
+Надёжная многослойная защита, которая убирает 99,9 % рекламы, cookie-баннеры, скрытые трекеры, майнинг-скрипты и навязчивые элементы без потери функциональности сайтов.
+
+!!! success "Результат после настройки"
+
+    Никаких баннеров «Принять cookies»
+    Полное отсутствие рекламы на YouTube, Яндексе, Twitch и большинстве сайтов
+    Блокировка скрытого майнинга и счётчиков
+    Ускорение загрузки страниц за счёт локального CDN
 
 ---
 
-## Расширения  { data-search-exclude }
+## Обязательный минимальный набор (устанавливается за 2 минуты) { data-search-exclude }
 
 
-| Название  | Описание  | Chrome | Firefox  |
+| Расширение  | Что блокирует  | Chrome / Edge | Firefox  |
 |-----------|-----------|:------:|:--------:|
-| **I still don't care about cookies** | Убирает баннеры “Примите куки” | [⬇️ Установить](https://chromewebstore.google.com/detail/edibdbjcniadpccecjdfdjjppcpchdlm) | [🦊 Установить](https://addons.mozilla.org/en-US/firefox/addon/istilldontcareaboutcookies/) |
-| **uBlock Origin** | Мощный блокировщик рекламы и трекеров | [⬇️ Установить](https://chromewebstore.google.com/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm) | [🦊 Установить](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) |
-| **Decentraleyes** | Локально кэширует CDN-файлы, ускоряет сайты, защищает от трекинга | [⬇️ Установить](https://chromewebstore.google.com/detail/ldpochfccmkkmhdbclfhpagapcfdljkj) | [🦊 Установить](https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/) |
-| **Privacy Badger** | Автоматически блокирует невидимые трекеры | [⬇️ Установить](https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp) | [🦊 Установить](https://addons.mozilla.org/firefox/addon/privacy-badger17/) |
-| **Violentmonkey** | Аналог Tampermonkey, для пользовательских скриптов | [⬇️ Установить](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag) | [🦊 Установить](https://addons.mozilla.org/firefox/addon/violentmonkey/) |
-
-!!! info "Просто установить:"
-    - **I still don’t care about cookies**
-    - **Decentraleyes**
-    - **Privacy Badger**
-
-Эти три расширения работают автоматически и не требуют сложной настройки.
+| **I still don't care about cookies** | Все cookie-баннеры GDPR/CCPA | [Установить](https://chromewebstore.google.com/detail/edibdbjcniadpccecjdfdjjppcpchdlm) | [Установить](https://addons.mozilla.org/en-US/firefox/addon/istilldontcareaboutcookies/) |
+| **uBlock Origin** | Реклама, трекеры, майнеры, всплывающие окна | [Установить](https://chromewebstore.google.com/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm) | [Установить](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) |
+| **Decentraleyes** | Трекинг через Google Hosted Libraries, CDN | [Установить](https://chromewebstore.google.com/detail/ldpochfccmkkmhdbclfhpagapcfdljkj) | [Установить](https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/) |
+| **Privacy Badger** | Автоматическая блокировка невидимых трекеров EFF | [Установить](https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp) | [Установить](https://addons.mozilla.org/firefox/addon/privacy-badger17/) |
 
 ---
 
-## Настройка uBlock Origin
+## Продвинутый уровень: максимальная защита
+### Настройка uBlock Origin
 
-После установки:
+1. Откройте **uBlock Origin** → нажмите на иконку шестерёнки → вкладка **Фильтры**.
+2. Пролистайте вниз и включите все списки из категорий **Annoyances** и **Multipurpose** (если ещё не включены).
+3. Перейдите во вкладку **Мои фильтры**.
+4. Вставьте ссылки ниже (каждую с новой строки) и нажмите **Применить изменения**.
 
-1. Открой расширение в браузере.
-2. Зайди в **Настройки** → **Панель фильтров**.
+``` yaml title="адреса"
+# Русскоязычные и региональные
+https://filters.adtidy.org/extension/ublock/filters/214.txt          # RU AdList: Фильтр счётчиков и аналитики
+https://filters.adtidy.org/extension/ublock/filters/224.txt          # RU AdList: Битблок (визуальные элементы)
+https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt  # NoCoin — блокировка майнинга
 
-### Пользовательские фильтры  { data-search-exclude }
-
-Скопируй адреса ниже и добавь их в поле **Импортировать** (вкладка *Мои фильтры → Импортировать*), каждый с новой строки:
-
-
-``` yaml title="Ссылки на фильтры"
-
-https://filters.adtidy.org/extension/ublock/filters/1.txt
-https://raw.githubusercontent.com/mtxadmin/ublock/master/it
-https://raw.githubusercontent.com/mtxadmin/ublock/master/filters/yandex 
-https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt 
-https://easylist-downloads.adblockplus.org/cntblock.txt 
-https://easylist-downloads.adblockplus.org/bitblock.txt 
-
-``` 
-??? question "Что за фильтры?"
-    1. **AdGuard Russian filter** — основной русский фильтр.
-    2. **Yet another small uBlock list** — анти-мошеннический и анти-трекерный.
-    3. **Яндекс фильтр** — убирает баннеры и крупные лого.
-    4. **NoCoin** — блокировка скрытого майнинга.
-    5 и 6. **RU AdList Counters / BitBlock** — доп. фильтры для счётчиков и визуального мусора.
+# Дополнительные annoyances и защита
+https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances-cookies.txt
+https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances-others.txt
+https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt
+```
 
 ---
 
-## Violentmonkey
+### Violentmonkey + пользовательские скрипты (обход сложной рекламы)
 
-После установки открыть данные скрипты и нажать установить:
+Установите менеджер пользовательских скриптов:
 
-| Название | Описание | Ссылка |
-|-----------|-----------|--------|
-| **RU AdList JS Fixes** | Убирает скрипты Яндекса и прочих | [Установить](https://greasyfork.org/ru/scripts/19993-ru-adlist-js-fixes) |
-| **AdGuard Extra** | Расширенный юзерскрипт для защиты от сложной рекламы | [Установить](https://userscripts.adtidy.org/release/adguard-extra/1.0/adguard-extra.user.js) |
+| Расширение  | Что блокирует  | Chrome / Edge | Firefox  |
+|-----------|-----------|:------:|:--------:|
+| **Violentmonkey** | Аналог Tampermonkey, для пользовательских скриптов | [Установить](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag) | [Установить](https://addons.mozilla.org/firefox/addon/violentmonkey/) |
+
+После установки просто перейдите по ссылкам и нажмите Установить:
+
+| Скрипт  | Что делает  | Ссылка на установку |
+|-----------|-----------|:------:|
+| **RU AdList JS Fixes** | Убирает рекламу, внедрённую через JavaScript (Яндекс, Mail.ru и др.) | [Установить](https://greasyfork.org/ru/scripts/19993-ru-adlist-js-fixes/code) |
+| **AdGuard Extra** | Обходит самые сложные анти-адблок системы | [Установить](https://userscripts.adtidy.org/release/adguard-extra/1.0/adguard-extra.user.js) |
+| **YouTube Anti-AdBlock Bypass** (опционально) | Отключает предупреждение YouTube об адблоке | [Установить](https://greasyfork.org/ru/scripts/495583-youtube-anti-adblock-bypass) |
 
 ---
 
-## Проверка блокировщика  { data-search-exclude }
+### Проверка эффективности блокировки { data-search-exclude }
 
-В этих тестах должно быть **100 из 100 баллов**, только тогда рекламы видно не будет!
+После настройки откройте тесты — все должны показать 100/100 или полное отсутствие рекламы.
 
-Проверь работу фильтров на:
+| Тест  | Ожидаемый результат  | Ссылка |
+|-----------|-----------|:------:|
+| **Toolz AdBlock Tester** | 100/100 | [Проверить](https://adblock.turtlecute.org/) |
+| **CheckAdBlock.ru** | «AdBlock работает идеально» | [Проверить](https://checkadblock.ru/) |
+| **D3Ward AdBlock Test** | Все тесты зелёные | [Проверить](https://d3ward.github.io/toolz/adblock.html) |
 
-| Сайт | Назначение |
-|------|-------------|
-| 🔗 [Test Ad Block – Toolz](https://adblock.turtlecute.org/) | Полная проверка блокировщика |
-| 🔗 [CheckAdBlock](https://checkadblock.ru) | Базовая проверка на наличие рекламы |
+#### Реальные сайты для проверки: { data-search-exclude }
 
+- [Яндекс.Погода](https://yandex.ru/pogoda) — не должно быть баннеров и рекламы в боковой панели
+- [Яндекс.Картинки](https://yandex.ru/images) — чистый поиск без промо
+- YouTube — видео без рекламы и без предупреждения «Ad blockers violate...»
 
-Сайты яндекса:
+---
 
-- [Яндекс Погода](https://yandex.ru/pogoda)
-- [Яндекс Картинки](https://yandex.ru/images)
-- [Сайты с Директом](https://direct.yandex.ru)
+### Частые проблемы и решения { data-search-exclude }
 
+| Проблема  | Решение |
+|:-----------|:-----------|
+| На YouTube появляется предупреждение об адблоке | Обновите uBlock Origin и установите скрипт YouTube Anti-AdBlock Bypass (ссылка выше) |
+| Сайт показывает серый экран или «Включите JS» | Добавьте сайт в белый список uBlock (клик по иконке → большой выключатель) |
+
+---
+
+Теперь браузер чист от рекламы и трекинга на 99,9 % случаев.
+
+> Если после настройки что-то не работает — пишите в комментарии модель браузера и сайт-проблему, разберём индивидуально.
+
+---
+
+<div>
+  <a href="https://yoomoney.ru/to/4100115791948942" class="donate-block">
+    <span class="donate-text">
+        Поддержи развитие Ri-Wiki 🌱
+    </span>
+  </a>
+</div>
