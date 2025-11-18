@@ -3,7 +3,6 @@ title: Главная страница
 description: Компактная база знаний по Windows, программам и полезным гайдам.
 date: 2025-11-13
 author: rivzor
-icon: lucide/library-big
 comments: false
 hide:
     - navigation

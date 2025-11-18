@@ -53,9 +53,9 @@ tags:
 
 1.  **Подготовьте флешку:** Создайте загрузочную USB-флешку с Windows. Вы можете использовать для этого Rufus, как описано в другом гайде.
     
-    [:material-page-next-outline: Гайд по установке Windows](install.md){ .md-button }
+    [:material-page-next-outline: Гайд по установке Windows](install.md){ .md-button data-preview }
     
-    [:material-usb-flash-drive: О программе Rufus](../software/pc/rufus.md){ .md-button }
+    [:material-usb-flash-drive: О программе Rufus](../software/pc/rufus.md){ .md-button data-preview }
 
 2.  **Скопируйте файл:** Просто скопируйте ваш готовый файл `autounattend.xml` в **корень** созданной загрузочной USB-флешки (рядом с `setup.exe` и другими папками).
 

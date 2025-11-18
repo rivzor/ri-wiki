@@ -47,4 +47,4 @@ PeaZip — кросс-платформенный архиватор с функ�
 ???+ info "Другие версии / Альтернативы"
     - [:octicons-download-16: GitHub Releases](https://github.com/peazip/PeaZip/releases/latest)
     - [:octicons-download-16: SourceForge](https://sourceforge.net/projects/peazip/)
-    - Альтернатива: [__7-Zip__](https://www.7-zip.org/) - бесплатный архиватор с высокой степенью сжатия.
+    - Альтернатива: [__7-Zip__](7zip.md){ data-preview } - бесплатный архиватор с высокой степенью сжатия.

@@ -1,3 +1,8 @@
 {% extends "base.html" %}
 
-
+{% block content %}
+  {{ super() }}
+  {% if page and page.meta and page.meta.author %}
+    <p style="text-align:center;"><small>Обновлено: {{ page.meta.date[8:10] }}.{{ page.meta.date[5:7] }}.{{ page.meta.date[0:4] }} • {{ page.meta.author }}</small></p>
+  {% endif %}
+{% endblock %}

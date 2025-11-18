@@ -24,19 +24,24 @@ nav = [
             "content/windows/autounattend.md",
             ] },
         ]},
-        { "Программы на ПК" = [
-            "content/software/pc/rufus.md",
-            "content/software/pc/peazip.md",
-            "content/software/pc/wiztree.md",
-            "content/software/pc/potplayer.md",
-        ] },
-        { "Программы на Андроид" = [
-            "content/software/android/byebyedpi.md",
-        ] },
-    ] },
+        { "Полезное для ПК" = [
+            { "Лучший софт" = [ 
+                "content/software/pc/index.md", 
+                "content/software/pc/rufus.md",
+                "content/software/pc/peazip.md",
+                "content/software/pc/7zip.md",
+                "content/software/pc/potplayer.md",
+                "content/software/pc/wiztree.md",
+                ]}
+            ]},
+        { "Полезное для Андроид" = [
+            { "Лучшие АПК" = [
+                "content/software/android/index.md",]}
+            ]},
+    ]},
     { "Разное" = [
         "content/other/adblock.md",
-    ] },
+    ]},
 ]
 
 extra_css = ["assets/stylesheets/extra.css"]
