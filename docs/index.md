@@ -5,8 +5,7 @@ date: 2025-11-13
 author: rivzor
 comments: false
 hide:
-    - navigation
-    - toc
+        - navigation
 ---
 
 # Ri-Wiki — база знаний, которая реально помогает { data-search-exclude }
@@ -16,55 +15,61 @@ hide:
 
 **Никакой рекламы, партнёрок и спонсорского контента — только то, что работает на 100 %.**
 
-!!! success "Обновляется каждый месяц"
-    Последнее большое обновление: 17 ноября 2025 (Windows 11 25H2, новые фильтры uBlock, актуальные ISO)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/rivzor/ri-wiki/main?display_timestamp=author&style=for-the-badge&label=%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D0%B5%D0%B5%20%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5)  
+![GitHub Repo stars](https://img.shields.io/github/stars/rivzor/ri-wiki?style=for-the-badge)
 
-## Популярные гайды прямо сейчас 
+---
 
-<div class="grid cards" markdown>   
+## Содержание
 
--   :lucide-computer:{ .lg .middle } __Всё о Windows__
+### Руководства
 
-    ---
+<div class="grid cards" markdown>
 
-    Оптимизация Windows, настройка 
-    автозагрузки, чистка, ускорение.
+- [:lucide-shield-check:{ .middle } __Гайд по блокировке рекламы в браузерах__](content/other/adblock.md){ data-preview  }
 
-    [:octicons-arrow-right-24: Перейти](content/windows/download.md)
+</div>
+<div class="grid cards" markdown>
 
--   :lucide-folder-code:{ .lg .middle } __Программы__
+- [:lucide-wrench:{ .middle } __Лучший софт на ПК__](content/software/pc/index.md){ data-preview  }
 
-    ---
+</div>
+<div class="grid cards" markdown>
 
-    Полезный софт, системные утилиты, 
-    установка и настройка.
-
-    [:octicons-arrow-right-24: Перейти](content/software/pc/rufus/)
-
--   :lucide-notebook-pen:{ .lg .middle } __Гайды__
-
-    ---
-
-    Инструкции, лайфхаки и статьи обо всём, 
-    что упрощает жизнь.
-
-    [:octicons-arrow-right-24: Перейти](content/other/adblock/)
+- [:lucide-smartphone:{ .middle } __Лучшие АПК__](content/software/android/index.md){ data-preview  }
 
 </div>
 
 ---
 
-### Почему стоит добавить Ri-Wiki в закладки? { data-search-exclude }
+### Всё о Windows
 
-| Преимущество  | Что это значит для вас |
-|:-----------|:-----------|
-| **Только рабочие методы** | Всё протестировано лично автором в 2025 году |
-| **Скриншоты ко всем шагам** | Никаких "представьте, что здесь кнопка" |
-| **Актуальность** | Обновления под новые версии Windows и софт |
-| **Безопасные ссылки** | Только официальные источники и проверенные зеркала |
-| **Никакой рекламы и трекеров** | Даже Google Analytics здесь нет |
+<div class="grid cards" markdown>
 
-> Есть пожелания или нашли ошибку? Пишите в комментариях под любым гайдом — отвечаю всем!
+- [:octicons-arrow-right-24:{ .lg .middle } __Скачать Windows__](content/windows/download.md){ data-preview }
+
+</div>
+<div class="grid cards" markdown>
+
+- [:octicons-arrow-right-24:{ .lg .middle } __Скачать Office__](content/windows/download_office.md){ data-preview }
+
+</div>
+<div class="grid cards" markdown>
+
+- [:octicons-arrow-right-24:{ .lg .middle } __Установка Windows__](content/windows/install.md){ data-preview }
+
+</div>
+<div class="grid cards" markdown>
+
+- [:octicons-arrow-right-24:{ .lg .middle } __Активация Windows/Office__](content/windows/activation.md){ data-preview }
+
+</div>
+
+
+
+---
+
+> Есть пожелания или нашли ошибку? Пишите в комментариях под любым гайдом или делайте форк
 
 
 <div>

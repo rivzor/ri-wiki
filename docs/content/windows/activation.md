@@ -5,7 +5,6 @@ date: 2025-11-14
 author: rivzor
 icon: lucide/flame
 comments: true
-status: new
 tags:
     - винда
     - офис

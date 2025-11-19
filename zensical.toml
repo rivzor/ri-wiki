@@ -15,15 +15,9 @@ edit_uri = "edit/main/docs/"
 nav = [
     { "Главная" = "index.md" },
     { "Руководства" = [
-        { "Windows" = [
-            "content/windows/download.md",
-            "content/windows/install.md",
-            "content/windows/activation.md",
-            { "Оптимизация" = [
-            "content/windows/optimization.md",
-            "content/windows/autounattend.md",
-            ] },
-        ]},
+        {"Полезное" = [
+            "content/other/adblock.md",
+            ]},
         { "Полезное для ПК" = [
             { "Лучший софт" = [ 
                 "content/software/pc/index.md", 
@@ -39,8 +33,18 @@ nav = [
                 "content/software/android/index.md",]}
             ]},
     ]},
-    { "Разное" = [
-        "content/other/adblock.md",
+    { "Windows" = [
+        { "Windows" = [
+            "content/windows/download.md",
+            "content/windows/download_office.md",
+            "content/windows/install.md",
+            "content/windows/activation.md",
+        ]},
+        { "Гайды Windows" = [
+            "content/windows/optimization.md",
+            "content/windows/autounattend.md",
+            ] },
+        
     ]},
 ]
 
@@ -159,37 +163,26 @@ pygments_lang_class = true
 object = "pymdownx.slugs.slugify"
 kwds = { case = "lower" }   
 
-[project.markdown_extensions.attr_list]
 
 [project.markdown_extensions.pymdownx.emoji]
 emoji_index = "zensical.extensions.emoji.twemoji" 
 emoji_generator = "zensical.extensions.emoji.to_svg"
 
+[project.markdown_extensions.pymdownx.snippets]
+
 [project.markdown_extensions.abbr]
-
 [project.markdown_extensions.admonition]
-
+[project.markdown_extensions.attr_list]
 [project.markdown_extensions.def_list]
-
 [project.markdown_extensions.footnotes]
-
 [project.markdown_extensions.md_in_html]
-
 [project.markdown_extensions.pymdownx.blocks.caption]
-
-[project.markdown_extensions.pymdownx.details]
-
-[project.markdown_extensions.pymdownx.keys]
-
-[project.markdown_extensions.pymdownx.superfences]
-
 [project.markdown_extensions.pymdownx.caret]
-
+[project.markdown_extensions.pymdownx.details]
+[project.markdown_extensions.pymdownx.keys]
 [project.markdown_extensions.pymdownx.magiclink]
-
+[project.markdown_extensions.pymdownx.progressbar]
 [project.markdown_extensions.pymdownx.mark]
-
+[project.markdown_extensions.pymdownx.superfences]
 [project.markdown_extensions.pymdownx.tilde]
-
-
 

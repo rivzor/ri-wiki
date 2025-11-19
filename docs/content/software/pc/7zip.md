@@ -52,8 +52,3 @@ status: updated
 ???+ success "Рекомендация 2025"
     Для 99 % пользователей — 64-bit версия + установка с галочкой «Добавить в контекстное меню».
 
-
-
-<p style="text-align:center;color:var(--md-default-fg-color--light);margin-top:3rem;">
-  Обновлено { page.meta.date | date("d.MM.yyyy") } • { page.meta.author }
-</p>

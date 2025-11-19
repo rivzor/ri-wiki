@@ -11,7 +11,6 @@ tags:
     - rufus
     - ventoy
     - чистая-установка
-status: new
 ---
 
 # Полноценная чистая установка Windows { data-search-exclude }
