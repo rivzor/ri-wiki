@@ -1,48 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/</loc>
+        <loc>https://wiki.rivzor.space/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/other/adblock/</loc>
+        <loc>https://wiki.rivzor.space/content/other/adblock/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/software/pc/</loc>
+        <loc>https://wiki.rivzor.space/content/software/pc/rufus/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/software/pc/rufus/</loc>
+        <loc>https://wiki.rivzor.space/content/software/pc/peazip/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/software/pc/peazip/</loc>
+        <loc>https://wiki.rivzor.space/content/software/pc/7zip/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/software/pc/7zip/</loc>
+        <loc>https://wiki.rivzor.space/content/software/pc/potplayer/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/software/pc/potplayer/</loc>
+        <loc>https://wiki.rivzor.space/content/software/pc/wiztree/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/software/pc/wiztree/</loc>
+        <loc>https://wiki.rivzor.space/content/software/android/revanced/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/software/android/</loc>
+        <loc>https://wiki.rivzor.space/content/windows/download/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/windows/download/</loc>
+        <loc>https://wiki.rivzor.space/content/windows/download_office/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/windows/download_office/</loc>
+        <loc>https://wiki.rivzor.space/content/windows/install/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/windows/install/</loc>
+        <loc>https://wiki.rivzor.space/content/windows/activation/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/windows/activation/</loc>
+        <loc>https://wiki.rivzor.space/content/windows/optimization/</loc>
       </url>
       <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/windows/optimization/</loc>
-      </url>
-      <url>
-        <loc>https://rivzor.github.io/ri-wiki/content/windows/autounattend/</loc>
+        <loc>https://wiki.rivzor.space/content/windows/autounattend/</loc>
       </url>
 </urlset>

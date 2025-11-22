@@ -1,7 +1,7 @@
 [project]
 site_name = "Ri-Wiki"
 site_description = "База знаний о всём, что связанно с ПК"
-site_url = "https://rivzor.github.io/ri-wiki/"
+site_url = "https://wiki.rivzor.space/"
 site_author = "rivzor"
 copyright = "Copyright &copy; 2025 rivzor"
 
@@ -20,7 +20,7 @@ nav = [
             ]},
         { "Полезное для ПК" = [
             { "Лучший софт" = [ 
-                "content/software/pc/index.md", 
+                # "content/software/pc/index.md", 
                 "content/software/pc/rufus.md",
                 "content/software/pc/peazip.md",
                 "content/software/pc/7zip.md",
@@ -30,8 +30,12 @@ nav = [
             ]},
         { "Полезное для Андроид" = [
             { "Лучшие АПК" = [
-                "content/software/android/index.md",]}
+                # "content/software/android/index.md",
+                "content/software/android/revanced.md",
+                # "content/software/android/byebyedpi.md",
+                ]}
             ]},
+            
     ]},
     { "Windows" = [
         { "Windows" = [
@@ -141,10 +145,6 @@ hot = "Горячее"
 
 [project.extra]
 generator = false
-alternate = [
-    { name = "Русский", lang = "ru" },
-    { name = "English", link = "/ri-wiki/en/", lang = "en" },
-]
 
 [project.markdown_extensions.toc]
 permalink =  "#"

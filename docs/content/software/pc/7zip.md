@@ -9,7 +9,6 @@ tags:
   - утилиты
   - архиватор
   - софт
-status: updated
 ---
 # 7-Zip
 ![7-Zip](https://www.7-zip.org/7ziplogo.png){ align=left width="70" loading=lazy }

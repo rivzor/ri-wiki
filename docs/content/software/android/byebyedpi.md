@@ -13,6 +13,7 @@ comments: true
 ---
 
 # ByeByeDPI
+
 ![ByeByeDPI](https://github.com/romanvht/ByeDPIAndroid/raw/master/.github/images/app.svg){ align=left  width="70" loading=lazy }
 ByeByeDPI — инструмент для обхода блокировок на Android. Оно использует SOCKS5-прокси для перенаправления трафика локально, не шифруя данные и не скрывая IP.
 
@@ -43,7 +44,6 @@ ByeByeDPI — инструмент для обхода блокировок на
 
 [:octicons-download-16: Скачать с официального GitHub](https://github.com/romanvht/ByeByeDPI/releases/latest){ .md-button .md-button--primary }
 
-??? info "Другие версии / Альтернативы"
+??? info "Другие версии"
     - [:octicons-download-16: Альтернативный репозиторий](https://github.com/dovecoteescapee/ByeDPIAndroid/releases)
     - [:octicons-download-16: F-Droid версия](https://apt.izzysoft.de/fdroid/index/apk/io.github.dovecoteescapee.byedpi)
-    - Альтернатива: [__GoodbyeDPI__](https://github.com/ValdikSS/GoodbyeDPI) — базовый инструмент для ПК.
