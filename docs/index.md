@@ -21,12 +21,3 @@ hide:
 ---
 
 > Есть пожелания или нашли ошибку? Пишите в комментариях под любым гайдом или делайте форк
-
-
-<div>
-  <a href="https://yoomoney.ru/to/4100115791948942" class="donate-block">
-    <span class="donate-text">
-        Поддержи развитие Ri-Wiki 🌱
-    </span>
-  </a>
-</div>

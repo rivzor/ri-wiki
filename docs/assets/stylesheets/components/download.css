@@ -1,0 +1,219 @@
+/* --- DOWNLOAD HUB: ADAPTED FOR ZENSICAL --- */
+
+.dl-card {
+  /* Переменные */
+  --dl-primary: var(--md-primary-fg-color); /* Цвет темы (красный/синий) */
+  --dl-bg: var(--md-default-bg-color); /* Фон сайта */
+  --dl-border: var(--md-default-fg-color--lightest);
+  --dl-text: var(--md-default-fg-color);
+  --dl-text-dim: var(--md-default-fg-color--light);
+  
+  /* Основа */
+  background: rgba(255, 255, 255, 0.4); /* Фоллбэк для светлой */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  
+  border: 1px solid var(--dl-border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  
+  transition: transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1),
+              border-color 0.25s ease,
+              box-shadow 0.25s ease;
+              
+  box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+  position: relative;
+  overflow: hidden; /* Чтобы блики не вылезали */
+}
+
+/* Адаптация под темную тему Zensical */
+[data-md-color-scheme="slate"] .dl-card {
+  background: rgba(30, 30, 30, 0.4); 
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Hover Effect */
+.dl-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--dl-primary);
+  /* Тень с оттенком основного цвета */
+  box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.15); 
+}
+
+/* DESKTOP LAYOUT */
+@media (min-width: 768px) { 
+  .dl-card { 
+    flex-direction: row; 
+    align-items: flex-start; 
+    justify-content: space-between; 
+  } 
+}
+
+/* LEFT SIDE (Main content) */
+.dl-main { 
+  flex: 1; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 0.5rem; 
+  min-width: 0; 
+}
+
+.dl-header-row { 
+  display: flex; 
+  align-items: center; 
+  gap: 0.75rem; 
+}
+
+.dl-icon-box {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  width: 42px; 
+  height: 42px;
+  border-radius: 10px; 
+  
+  /* Фон иконки - полупрозрачный цвет темы */
+  background: var(--md-default-fg-color--lightest); 
+  color: var(--dl-primary); 
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.dl-card:hover .dl-icon-box {
+  background: var(--dl-primary);
+  color: #fff;
+}
+
+.dl-icon-box svg { width: 22px; height: 22px; stroke-width: 2; }
+
+.dl-title-wrap { 
+  display: flex; 
+  flex-wrap: wrap; 
+  align-items: normal; 
+  gap: 0.5rem; 
+}
+
+.dl-title { 
+  font-size: 0.9rem; 
+  font-weight: 700; 
+  margin: 0 !important; 
+  line-height: 1.2; 
+  color: var(--dl-text);
+}
+
+.dl-version { 
+  font-family: "JetBrains Mono", monospace;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 0.55rem; 
+  background: var(--md-default-fg-color--lightest); 
+  padding: 2px 6px; 
+  border-radius: 4px; 
+  color: var(--dl-text-dim); 
+}
+
+.dl-desc { 
+  font-size: 0.75rem; 
+  color: var(--dl-text-dim); 
+  line-height: 1.5; 
+  margin: 4px 0 6px 0; 
+}
+
+.dl-tags { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 6px; 
+}
+
+.dl-tag { 
+  font-size: 0.6rem; 
+  padding: 2px 10px; 
+  border-radius: 6px; 
+  background: transparent; 
+  border: 1px solid var(--dl-border); 
+  color: var(--dl-text-dim); 
+  white-space: nowrap; 
+  opacity: 0.8;
+}
+
+/* RIGHT SIDE (Actions) */
+.dl-actions { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 0.6rem; 
+  min-width: 160px; 
+  flex-shrink: 0; 
+}
+
+@media (max-width: 768px) { 
+  .dl-actions { width: 100%; } 
+}
+
+.dl-btn {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 8px; 
+  padding: 6px 24px; 
+  border-radius: 8px;
+  font-size: 0.7rem; 
+  font-weight: 600; 
+  text-decoration: none !important; 
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); 
+  cursor: pointer; 
+  white-space: nowrap;
+}
+
+.dl-btn svg { width: 16px; height: 16px; }
+
+/* Primary (Скачать) - берет цвет темы */
+.dl-btn.primary { 
+  background: var(--dl-primary); 
+  color: #fff !important; 
+  border: 1px solid transparent; 
+}
+
+.dl-btn.primary:hover { 
+  opacity: 0.9;
+  transform: translateY(-1px); 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+}
+
+/* Secondary (Torrent) */
+.dl-btn.secondary { 
+  background: transparent; 
+  color: var(--dl-text-dim) !important; 
+  border: 1px dashed var(--dl-text-dim); 
+}
+
+.dl-btn.secondary:hover { 
+  border-style: solid; 
+  border-color: #10b981; /* Зеленый при наведении */
+  color: #10b981 !important; 
+  background: rgba(16, 185, 129, 0.05); 
+}
+
+/* Mirror */
+.dl-btn.mirror { 
+  background: rgba(245, 158, 11, 0.05); 
+  color: #d97706 !important; 
+  border: 1px solid rgba(245, 158, 11, 0.3); 
+}
+
+.dl-btn.mirror:hover { 
+  background: rgba(245, 158, 11, 0.15); 
+  border-color: #f59e0b; 
+}
+
+/* Коррекция цветов для темной темы */
+[data-md-color-scheme="slate"] .dl-btn.mirror { 
+  color: #fbbf24 !important; 
+  border-color: rgba(251, 191, 36, 0.3); 
+}
+

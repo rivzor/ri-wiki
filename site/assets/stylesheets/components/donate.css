@@ -1,0 +1,111 @@
+/* --- DONATE SEPARATOR STYLE --- */
+
+.donate-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem; /* Отступ между линиями и сердцем */
+  margin: 2rem 0 2rem 0; /* Пространство вокруг */
+  width: 100%;
+  opacity: 0.25; /* В ПОКОЕ: Еле видная (призрачная) */
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* При наведении на весь блок он становится ярче */
+.donate-separator:hover {
+  opacity: 1;
+}
+
+/* ЛИНИИ ПО БОКАМ */
+.donate-line {
+  flex-grow: 1; /* Растягиваются на всю ширину */
+  height: 1px;
+  background: var(--md-default-fg-color); /* Цвет текста темы */
+  /* Градиентная маска: линии исчезают к краям экрана и к центру */
+  mask-image: linear-gradient(to right, transparent, black 40%, black 60%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 40%, black 60%, transparent);
+  transition: width 0.3s ease;
+}
+
+/* КНОПКА-СЕРДЦЕ */
+.donate-heart-btn {
+  position: relative; /* Для позиционирования тултипа */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: var(--md-default-fg-color);
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  text-decoration: none !important; /* Убираем стандартное подчеркивание */
+  border: none !important;
+}
+
+.donate-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  transition: transform 0.3s ease;
+}
+
+/* HOVER ЭФФЕКТ ДЛЯ СЕРДЦА */
+.donate-heart-btn:hover {
+  color: #ef4444; /* Красный цвет */
+  transform: scale(1.1);
+  background: var(--md-default-fg-color--lightest); /* Еле заметный кружок фона */
+}
+
+.donate-heart-btn:hover .donate-icon {
+  animation: separator-beat 1s infinite ease-in-out;
+}
+
+/* --- TOOLTIP (ПОДСКАЗКА) --- */
+/* Создаем тултип из атрибута data-label */
+.donate-heart-btn::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 120%; /* Появляется СВЕРХУ */
+  left: 50%;
+  transform: translateX(-50%) translateY(10px); /* Начальная позиция (чуть ниже) */
+  
+  background-color: var(--md-default-fg-color);
+  color: var(--md-default-bg-color);
+  
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.5rem;
+  font-family: var(--md-text-font);
+  font-weight: 500;
+  white-space: nowrap;
+  
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none; /* Чтобы тултип не мешал клику */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Показываем тултип при наведении */
+.donate-heart-btn:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0); /* Плавный подъем */
+}
+
+/* АНИМАЦИЯ БИЕНИЯ */
+@keyframes separator-beat {
+  0% { transform: scale(1); }
+  14% { transform: scale(1.15); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.15); }
+  70% { transform: scale(1); }
+}
+
+/* АДАПТАЦИЯ ДЛЯ ТЕМНОЙ ТЕМЫ */
+[data-md-color-scheme="slate"] .donate-heart-btn::after {
+  background-color: #fff;
+  color: #000;
+}

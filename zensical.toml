@@ -8,9 +8,10 @@ copyright = "Copyright &copy; 2025 rivzor"
 docs_dir = "docs"
 site_dir = "site"
 
-repo_url = "https://github.com/rivzor/ri-wiki"
+repo_url = "https://github.com/rivzor/ri-wiki/"
 repo_name = "rivzor/ri-wiki"
 edit_uri = "edit/main/docs/"
+
 
 nav = [
     { "Главная" = "index.md" },
@@ -52,8 +53,16 @@ nav = [
     ]},
 ]
 
-extra_css = ["assets/stylesheets/extra.css"]
-extra_javascript = ["assets/javascript/extra.js"]
+extra_css = [
+    "assets/stylesheets/extra.css",
+    "assets/stylesheets/components/donate.css",
+    "assets/stylesheets/components/download.css",
+    ]
+extra_javascript = [
+    "assets/javascript/extra.js",
+    "assets/javascript/components/download-card.js",
+    
+    ]
 
 # ----------------------------------------------------------------------------
 # Section for configuring theme options
@@ -138,6 +147,7 @@ description = """
     С вашего согласия вы помогаете нам улучшать нашу документацию.
 """
 
+
 [project.extra.status]
 new = "Новое"
 deprecated = "Не актуально"
@@ -163,12 +173,13 @@ pygments_lang_class = true
 object = "pymdownx.slugs.slugify"
 kwds = { case = "lower" }   
 
-
 [project.markdown_extensions.pymdownx.emoji]
 emoji_index = "zensical.extensions.emoji.twemoji" 
 emoji_generator = "zensical.extensions.emoji.to_svg"
 
 [project.markdown_extensions.pymdownx.snippets]
+base_path = ["."]
+check_paths = true
 
 [project.markdown_extensions.abbr]
 [project.markdown_extensions.admonition]

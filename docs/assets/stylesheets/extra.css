@@ -19,6 +19,10 @@
     --md-support-text-color: #bfbfbf;
 }
 
+/* 1. Компоненты */
+@import url('components/donate.css');
+@import url('components/download.css');
+
 /* extra.css: Лаконичные бейджи в стиле admonitions — неброские, с иконками */
 .md-badge {
   display: inline-flex;
