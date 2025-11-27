@@ -1,5 +1,9 @@
 {% include "partials/donate.html" %}
 
+{% if page and page.meta.date %}
+  <p style="text-align:right; font-family:'JetBrains', monospace; margin:auto;"><small>Обновлено: {{ page.meta.date[8:10] }}.{{ page.meta.date[5:7] }}.{{ page.meta.date[0:4] }}</small></p>
+{% endif %}
+
 {% if page.meta.comments %}
   <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
   <script src="https://giscus.app/client.js"

@@ -157,13 +157,3 @@ Rufus - самый удобный инструмент для создания �
     <figure markdown="span">
         ![windows](https://img.ixbt.site/live/images/original/07/17/73/2022/07/03/a7c23caffa.png?w=877){ width="400" }
     </figure>
-
----
-
-<div>
-  <a href="https://yoomoney.ru/to/4100115791948942" class="donate-block">
-    <span class="donate-text">
-        Поддержи развитие Ri-Wiki 🌱
-    </span>
-  </a>
-</div>

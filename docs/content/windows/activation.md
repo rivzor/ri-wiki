@@ -64,13 +64,3 @@ tags:
 | **Ohook**   | Office              | Постоянно      | Нет      |
 | **TSforge** | Windows / ESU / Office | Постоянно   | Да (на новых сборках) |
 | **Online KMS** | Windows / Office | 180 дней (с автообновлением) | Да |
-
-
-
-<div>
-  <a href="https://yoomoney.ru/to/4100115791948942" class="donate-block">
-    <span class="donate-text">
-        Поддержи развитие Ri-Wiki 🌱
-    </span>
-  </a>
-</div>

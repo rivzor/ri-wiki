@@ -16,6 +16,27 @@ tags:
 !!! tip "Подсказка"
     Все ниже представленные образы являются официальными
 
+??? question "Как установить файл IMG?"
+    ### Для Windows
+
+    На Windows 10 и 11 образ монтируется двойным щелчком (в Windows 11 это делается автоматически).
+
+      1. Найти скачанный образ (например, `ProPlus2024Retail.img`).
+      2. Щёлкнуть по файлу правой кнопкой мыши.
+      3. Выбрать **«Смонтировать»** из меню контекстного меню — это создаст виртуальный DVD-диск в **«Проводнике»**.
+      4. Открыть **«Этот ПК»** в **«Проводнике»** — появится новый диск (например, D: или E:) с файлами установки Office.
+      5. Открыть этот диск и дважды щёлкнуть по файлу `setup.exe` — это запустит установку.
+      6. Дождаться завершения — обычно это занимает `от 3 до 10 минут`. В зависимости от версии установка может проходить в фоновом режиме — не  закрывать окно до конца.
+
+    ### Для macOS
+
+    На macOS образ монтируется с помощью установки Office для Mac.
+
+      1. Дважды щёлкнуть по файлу образа — откроется окно установщика Office для Mac.
+      2. Нажать **«Продолжить»**.
+      3. Принять лицензионное соглашение на программное обеспечение.
+      4. Выбрать **«Тип установки»** — **«Установить»**.
+      5. Дождаться завершения установки — обычно это занимает `от 3 до 7 минут` в зависимости от конфигурации устройства.
 ---
 
 ### Скачать Office
@@ -147,31 +168,20 @@ tags:
 
 #### Таблица сравнения
 
-???+ info "Информация"
-    | Версия          | Пакеты Office                              | Формат | Прибл. размер |
-    |-----------------|---------------------------------------------|--------|----------------|
-    | **2024 Pro Plus**       | Word, Excel, PowerPoint, OneNote, Outlook, Publisher, Access | IMG    | ~ 4.7 ГБ |
-    | **2024 Home & Business**| Word, Excel, PowerPoint, OneNote, Outlook                      | IMG    | ~ 3.8 ГБ |
-    | **2024 Home**           | Word, Excel, PowerPoint, OneNote                               | IMG    | ~ 3.5 ГБ |
-    | **2021 Pro Plus**      | Word, Excel, PowerPoint, OneNote, Outlook, Publisher, Access    | IMG    | ~ 4.7 ГБ |
-    | **2021 Home & Student** | Word, Excel, PowerPoint, OneNote                              | IMG    | ~ 4.3 ГБ |
-    | **2021 Home & Business**| Word, Excel, PowerPoint, OneNote, Outlook                      | IMG    | ~ 4.3 ГБ |
-    | **2019 Pro Plus**      | Word, Excel, PowerPoint, OneNote, Outlook, Publisher, Access    | IMG    | ~ 4.3 ГБ |
-    | **2019 Home & Student** | Word, Excel, PowerPoint, OneNote                              | IMG    | ~ 4.3 ГБ (используется общий файл 2021) |
-    | **2019 Home & Business**| Word, Excel, PowerPoint, OneNote, Outlook                      | IMG    | ~ 4.3 ГБ |
-    | **2016 Pro Plus**      | Word, Excel, PowerPoint, OneNote, Outlook, Publisher, Access    | IMG    | ~ 4.3 ГБ |
-    | **2016 Home & Student** | Word, Excel, PowerPoint, OneNote                              | IMG    | ~ 4.3 ГБ |
-    | **2016 Home & Business**| Word, Excel, PowerPoint, OneNote, Outlook                      | IMG    | ~ 4.3 ГБ |
+| Версия          | Пакеты Office                              | Формат | Прибл. размер |
+|-----------------|---------------------------------------------|--------|----------------|
+| **2024 Pro Plus**       | Word, Excel, PowerPoint, OneNote, Outlook, Publisher, Access | IMG    | ~ 4.7 ГБ |
+| **2024 Home & Business**| Word, Excel, PowerPoint, OneNote, Outlook                      | IMG    | ~ 3.8 ГБ |
+| **2024 Home**           | Word, Excel, PowerPoint, OneNote                               | IMG    | ~ 3.5 ГБ |
+| **2021 Pro Plus**      | Word, Excel, PowerPoint, OneNote, Outlook, Publisher, Access    | IMG    | ~ 4.7 ГБ |
+| **2021 Home & Student** | Word, Excel, PowerPoint, OneNote                              | IMG    | ~ 4.3 ГБ |
+| **2021 Home & Business**| Word, Excel, PowerPoint, OneNote, Outlook                      | IMG    | ~ 4.3 ГБ |
+| **2019 Pro Plus**      | Word, Excel, PowerPoint, OneNote, Outlook, Publisher, Access    | IMG    | ~ 4.3 ГБ |
+| **2019 Home & Student** | Word, Excel, PowerPoint, OneNote                              | IMG    | ~ 4.3 ГБ (используется общий файл 2021) |
+| **2019 Home & Business**| Word, Excel, PowerPoint, OneNote, Outlook                      | IMG    | ~ 4.3 ГБ |
+| **2016 Pro Plus**      | Word, Excel, PowerPoint, OneNote, Outlook, Publisher, Access    | IMG    | ~ 4.3 ГБ |
+| **2016 Home & Student** | Word, Excel, PowerPoint, OneNote                              | IMG    | ~ 4.3 ГБ |
+| **2016 Home & Business**| Word, Excel, PowerPoint, OneNote, Outlook                      | IMG    | ~ 4.3 ГБ |
 
 ---
-
-
-    
-<div>
-  <a href="https://yoomoney.ru/to/4100115791948942" class="donate-block">
-    <span class="donate-text">
-        Поддержи развитие Ri-Wiki 🌱
-    </span>
-  </a>
-</div>
 

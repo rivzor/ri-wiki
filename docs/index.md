@@ -1,7 +1,6 @@
 ---
-title: Главная страница   
+title: rivzor
 description: Компактная база знаний по Windows, программам и полезным гайдам.
-date: 2025-11-21
 author: rivzor
 comments: false
 hide:
